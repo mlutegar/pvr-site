@@ -1,8 +1,12 @@
 import emailjs from "emailjs-com";
 import { FormularioStyle } from "./Style";
 import Botao from "../../../Itens/Botao/Botao";
+import {useContext} from "react";
+import {LangContext} from "../../../../context/LangContext";
 
 const Formulario = () => {
+    const { lang, setLang } = useContext(LangContext);
+
     const enviarEmail = (e) => {
         e.preventDefault(); // Previne o comportamento padrão do formulário
 
@@ -47,7 +51,7 @@ const Formulario = () => {
                 <div className="dv-fo-titulo">
                     <div className="dv-fo-titulo-principal">Formulário</div>
                     <div className="dv-fo-titulo-subtitulo">
-                        Entre em contato com a PVR M&A
+                        {lang === "PT" ? "Entre em contato com a PVR M&A" : "Contact PVR M&A"}
                     </div>
                 </div>
 
@@ -55,18 +59,24 @@ const Formulario = () => {
                     <form onSubmit={enviarEmail}>
                         <div className="dv-fo-co-parte1">
                             <div className="dv-fo-co-item">
-                                <label htmlFor="nome">Nome:</label>
+                                <label htmlFor="nome">
+                                    {lang === "PT" ? "Nome:" : "Name:"}
+                                </label>
                                 <input type="text" id="nome" name="nome" required />
                             </div>
                             <div className="dv-fo-co-item">
-                                <label htmlFor="email">Email:</label>
+                                <label htmlFor="email">
+                                    {lang === "PT" ? "Email:" : "Email:"}
+                                </label>
                                 <input type="email" id="email" name="email" required />
                             </div>
                         </div>
 
                         <div className="dv-fo-co-parte2">
                             <div className="dv-fo-co-item mensagem">
-                                <label htmlFor="mensagem">Mensagem:</label>
+                                <label htmlFor="mensagem">
+                                    {lang === "PT" ? "Mensagem:" : "Message:"}
+                                </label>
                                 <textarea id="mensagem" name="mensagem" required></textarea>
                             </div>
                             <div className="dv-fo-co-item-button">

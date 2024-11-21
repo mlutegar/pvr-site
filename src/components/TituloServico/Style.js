@@ -7,10 +7,13 @@ const TituloServicoStyle = styled.header`
     .titulo {
         color: #44617C;
         font-family: Montserrat;
-        font-size: 40px;
+        font-size: var(--titulo);
         font-style: normal;
         font-weight: 600;
         line-height: 35px; /* 87.5% */
+    }
+    
+    @media screen and (max-width: 1440px) {
     }
 `
 

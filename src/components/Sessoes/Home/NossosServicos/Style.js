@@ -11,71 +11,73 @@ const NossosServicosStyle = styled.header`
     .dv-nossos-servicos-titulo {
         top: 69px;
         color: white;
-        font-size: 40px;
+        font-size: var(--titulo);
         font-family: Montserrat, sans-serif;
         font-weight: 700;
         word-wrap: break-word;
         opacity: 0;
         animation: fadeIn 1s ease-out forwards;
         animation-delay: 0.2s;
+        padding-top: 30px;
     }
 
     .dv-nossos-servicos-conteudo {
         padding-top: 4rem;
         display: flex;
         justify-content: center;
-        gap: 75px;
+        gap: 100px;
         opacity: 0;
         animation: fadeInUp 1s ease-out forwards;
         animation-delay: 0.4s;
-    }
+        font-size: var(--corpo);
 
-    .cd-nossos-servicos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        opacity: 0;
-        transform: translateY(20px);
-        animation: fadeInUp 0.8s ease-out forwards;
-        animation-delay: 0.6s;
-    }
+        .cd-nossos-servicos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease-out forwards;
+            animation-delay: 0.6s;
+        }
 
-    .cd-logo-nossos-servicos {
-        height: 100px;
-        opacity: 0;
-        animation: zoomIn 1s ease-out forwards;
-        animation-delay: 0.8s;
-    }
+        .cd-logo-nossos-servicos {
+            height: 100px;
+            opacity: 0;
+            animation: zoomIn 1s ease-out forwards;
+            animation-delay: 0.8s;
+        }
 
-    .cd-titulo-nossos-servicos {
-        padding-bottom: 30px;
-        color: #FDFDFD;
-        font-size: 24px;
-        font-family: Montserrat, sans-serif;
-        font-weight: 600;
-        word-wrap: break-word;
-        border-bottom: 2px solid #577fa4;
-        display: flex;
-        justify-content: center;
-        opacity: 0;
-        animation: fadeIn 1s ease-out forwards;
-        animation-delay: 1s;
-    }
+        .cd-titulo-nossos-servicos {
+            padding-bottom: 30px;
+            color: #FDFDFD;
+            font-family: Montserrat, sans-serif;
+            font-weight: 600;
+            word-wrap: break-word;
+            border-bottom: 2px solid #577fa4;
+            display: flex;
+            justify-content: center;
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+            animation-delay: 1s;
+        }
 
-    .cd-conteudo-nossos-servicos {
-        text-align: center;
-        color: white;
-        font-size: 20px;
-        font-family: Montserrat, sans-serif;
-        font-weight: 400;
-        line-height: 35px;
-        word-wrap: break-word;
-        padding-top: 30px;
-        opacity: 0;
-        animation: fadeInText 1s ease-out forwards;
-        animation-delay: 1.2s;
+        .cd-conteudo-nossos-servicos {
+            text-align: center;
+            color: white;
+            font-size: 0.8em;
+            font-family: Montserrat, sans-serif;
+            font-weight: 400;
+            line-height: 35px;
+            word-wrap: break-word;
+            padding-top: 30px;
+            opacity: 0;
+            animation: fadeInText 1s ease-out forwards;
+            animation-delay: 1.2s;
+            width: 300px;
+        }
     }
-
+    
     .dv-nossos-servicos-botao {
         display: flex;
         flex-direction: row;
@@ -108,6 +110,35 @@ const NossosServicosStyle = styled.header`
         opacity: 0;
         animation-delay: 1.4s;
         transform: scaleX(1);
+    }
+    
+    @media screen and (max-width: 1600px) {
+        .dv-nossos-servicos {
+            padding: 50px 100px 0;
+        }
+        
+        .cd-conteudo-nossos-servicos {
+            line-height: 30px;
+        }
+        
+        .Graficopequeno1 {
+            gap: 20px;
+        }
+        
+        .Graficopequeno2 {
+            gap: 20px;
+        }
+        
+    }
+    
+    @media screen and (max-width: 1440px) {
+        .cd-nossos-servicos {
+            width: 300px;
+        }
+        
+        .dv-nossos-servicos-conteudo {
+            margin-bottom: 40px;
+        }
     }
     
     /* Keyframes para animações */

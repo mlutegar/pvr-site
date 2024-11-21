@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const ConsultoriasEspecializadasStyle = styled.header`
-    background: linear-gradient(rgba(6, 6, 6, 0.55), rgba(6, 6, 6, 0.55)), url("imagens/fundoservicos.png");
+    background: linear-gradient(rgba(6, 6, 6, 0.55), rgba(6, 6, 6, 0.55)), url("imagens/fundoservicos.png") no-repeat center center/cover;
     height: 857px;
     flex-shrink: 0;
     margin-top: 50px;
@@ -11,7 +11,7 @@ const ConsultoriasEspecializadasStyle = styled.header`
         margin-top: 100px;
         color: #FFF;
         font-family: Montserrat;
-        font-size: 40px;
+        font-size: var(--titulo);
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -25,7 +25,7 @@ const ConsultoriasEspecializadasStyle = styled.header`
         
         color: #FFF;
         font-family: Montserrat;
-        font-size: 20px;
+        font-size: var(--corpo);
         font-style: normal;
         font-weight: 400;
         line-height: 30px; /* 150% */
@@ -49,12 +49,16 @@ const ConsultoriasEspecializadasStyle = styled.header`
                 margin-top: 30px;
                 color: #FFF;
                 font-family: Montserrat;
-                font-size: 20px;
+                font-size: var(--corpo);
                 font-style: normal;
                 font-weight: 400;
                 line-height: 30px; /* 150% */
             }
         }
+    }
+
+    @media screen and (max-width: 1440px) {
+        margin-top: 0;
     }
 `
 

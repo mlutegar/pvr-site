@@ -1,20 +1,13 @@
 import styled from "styled-components"
 
 const TransacaoCardStyle = styled.header`
-    .Fundo-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-
-    .Card {
+    
+    .Card{
         width: 450px;
         height: 450px;
         background: white;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: var(--corpo);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -22,17 +15,19 @@ const TransacaoCardStyle = styled.header`
         transition: transform 0.4s ease, box-shadow 0.4s ease;
         animation: fadeIn 0.6s ease-out;
     }
-
+    
     .Card:hover {
         transform: scale(1.05);
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     }
 
-    .card-menor {
-        width: 350px;
-        height: 350px;
-        top: 50px;
-        transition: transform 0.4s ease;
+    .Fundo-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
     .Imagens {
@@ -67,7 +62,6 @@ const TransacaoCardStyle = styled.header`
 
     .Titulo-transacao {
         color: black;
-        font-size: 20px;
         font-family: Montserrat, sans-serif;
         font-weight: 400;
         margin-bottom: 10px;
@@ -77,13 +71,37 @@ const TransacaoCardStyle = styled.header`
 
     .Descricao-transacao {
         color: black;
-        font-size: 14px;
+        font-size: 0.7em;
         font-family: Montserrat, sans-serif;
         font-weight: 400;
         line-height: 1.5;
         margin-top: 10px;
         opacity: 0;
         animation: fadeIn 1.2s ease-out forwards;
+    }
+
+    @media screen and (max-width: 1600px) {
+        .Card {
+            width: 400px;
+            height: 400px;
+        }
+
+        .Imagemempresa2,
+        .Imagemempresa1 {
+            width: 120px;
+        }
+
+        .Br {
+            height: 50px;
+        }
+        
+    }
+    
+    @media screen and (max-width: 1440px) {
+        .Card {
+            width: 340px;
+            height: 340px;
+        }
     }
 
     /* Keyframes for Animations */
@@ -121,4 +139,4 @@ const TransacaoCardStyle = styled.header`
     }
 `;
 
-export { TransacaoCardStyle };
+export {TransacaoCardStyle};

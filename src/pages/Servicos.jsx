@@ -4,7 +4,7 @@ import TituloServico from "../components/TituloServico/TituloServico";
 import ConsultoriasEspecializadas from "../components/ConsultoriasEspecializadas/ConsultoriasEspecializadas";
 import PrincipaisTrabalhos from "../components/PrincipaisTrabalhos/PrincipaisTrabalhos";
 
-const ServicosPage = () => {
+const Servicos = () => {
     return (
         <Base>
             <TituloServico/>
@@ -15,4 +15,4 @@ const ServicosPage = () => {
     )
 }
 
-export default ServicosPage
+export default Servicos

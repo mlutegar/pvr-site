@@ -8,7 +8,7 @@ const TituloAssessorStyle = styled.header`
     
     color: #44617C;
     font-family: Montserrat;
-    font-size: 40px;
+    font-size: var(--titulo);
     font-style: normal;
     font-weight: 600;
     line-height: normal;

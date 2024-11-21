@@ -3,10 +3,10 @@ import styled from "styled-components"
 const TopicoAssessorStyle = styled.header`
     margin-top: 50px;
     
-    .titulo {
+    .topico {
         color: #577FA4;
         font-family: Montserrat;
-        font-size: 32px;
+        font-size: var(--subtitulo);;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -25,7 +25,7 @@ const TopicoAssessorStyle = styled.header`
         ul {
             li {
                 font-family: Montserrat;
-                font-size: 20px;
+                font-size: var(--corpo);
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;

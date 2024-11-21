@@ -8,7 +8,7 @@ const PrincipaisTrabalhosStyle = styled.header`
         
         color: #44617C;
         font-family: Montserrat;
-        font-size: 40px;
+        font-size: var(--titulo);
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -21,7 +21,7 @@ const PrincipaisTrabalhosStyle = styled.header`
 
         color: #000;
         font-family: Montserrat;
-        font-size: 20px;
+        font-size: var(--corpo);
         font-style: normal;
         font-weight: 400;
         line-height: 35px; /* 175% */
@@ -61,6 +61,10 @@ const PrincipaisTrabalhosStyle = styled.header`
                 }
             }
         }
+    }
+
+    @media screen and (max-width: 1440px) {
+
     }
     
 `

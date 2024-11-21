@@ -2,8 +2,8 @@ import React from "react";
 import {createRoot} from "react-dom/client";
 import {HashRouter, Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
-import ServicosPage from "./pages/ServicosPage";
-import TransacoesPage from "./pages/TransacoesPage";
+import Servicos from "./pages/Servicos";
+import Transacoes from "./pages/Transacoes";
 import AssessorPage from "./pages/AssessorPage";
 
 const container = document.getElementById("root");
@@ -14,8 +14,8 @@ root.render(
         <HashRouter>
             <Routes>
                 <Route path="/" element={<Home/>}/>
-                <Route path="/servicos" element={<ServicosPage/>}/>
-                <Route path="/transacoes" element={<TransacoesPage/>}/>
+                <Route path="/servicos" element={<Servicos/>}/>
+                <Route path="/transacoes" element={<Transacoes/>}/>
                 <Route path="/assessor" element={<AssessorPage/>}/>
             </Routes>
         </HashRouter>

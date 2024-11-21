@@ -7,7 +7,7 @@ const TransacoesInteiroStyle = styled.header`
     .titulo-principal {
         color: #FFF;
         font-family: Montserrat,serif;
-        font-size: 48px;
+        font-size: var(--titulo);
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -21,7 +21,7 @@ const TransacoesInteiroStyle = styled.header`
         .titulo-secundario {
             color: #FFF;
             font-family: Montserrat;
-            font-size: 32px;
+            font-size: var(--subtitulo);
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -52,7 +52,7 @@ const TransacoesInteiroStyle = styled.header`
  
                     color: #577FA4;
                     font-family: Montserrat;
-                    font-size: 12px;
+                    font-size: var(--corpo);
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
@@ -89,7 +89,7 @@ const TransacoesInteiroStyle = styled.header`
         button {
             border-radius: 5px;
             font-family: Montserrat;
-            font-size: 16px;
+            font-size: var(--botao);
             font-style: normal;
             font-weight: 700;
             line-height: normal;
@@ -99,12 +99,34 @@ const TransacoesInteiroStyle = styled.header`
         span {
             color: #FFF;
             font-family: Montserrat;
-            font-size: 16px;
+            font-size: var(--corpo);
             font-style: normal;
             font-weight: 400;
             line-height: normal;
             display: flex;
             align-items: center;
+        }
+    }
+    
+    @media screen and (max-width: 1440px) {
+        .titulo-principal {
+            padding-top: 25px;
+        }
+        
+        .header{
+            .pesquisa {
+                position: relative;
+
+                .icone-pesquisa {
+                    position: absolute;
+                    left: 16px;
+                    top: 23px;
+                }
+            }   
+        }
+        
+        .transacoes{
+            gap: 60px;
         }
     }
 `

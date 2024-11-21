@@ -2,10 +2,10 @@
 import React from "react";
 import {TransacaoCardStyle} from "./Style";
 
-const TransacaoCard = ({transacao, isCardMenor, numero}) => {
+const TransacaoCard = ({transacao, numero, style}) => {
     return (
         <TransacaoCardStyle>
-            <div key={numero} className={`Card ${isCardMenor ? "card-menor" : ""} card${numero + 1}`}>
+            <div key={numero} className="Card" style={style}>
                 <div className="Fundo-box">
                     <div className="Imagens">
                         <img className="Imagemempresa2" src={transacao.imagem1} alt="Imagem Empresa 1"/>

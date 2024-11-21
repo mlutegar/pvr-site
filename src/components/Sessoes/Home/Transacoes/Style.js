@@ -12,7 +12,7 @@ const TransacoesStyle = styled.header`
         .titulo {
             .titulo-principal {
                 color: white;
-                font-size: 40px;
+                font-size: var(--titulo);
                 font-family: Montserrat, sans-serif;
                 font-weight: 700;
                 word-wrap: break-word;
@@ -22,7 +22,7 @@ const TransacoesStyle = styled.header`
             .subtitulo {
                 opacity: 0.60;
                 color: white;
-                font-size: 24px;
+                font-size: var(--subtitulo);
                 font-family: Montserrat, sans-serif;
                 font-weight: 400;
                 word-wrap: break-word;
@@ -54,7 +54,6 @@ const TransacoesStyle = styled.header`
             
             img {
                 width: 100%;
-                height: 100%;
             }
 
             :hover {
@@ -72,9 +71,18 @@ const TransacoesStyle = styled.header`
         
         .cards {
             display: flex;
-            gap: 4rem;
+            gap: 30px;
             transition: transform 0.5s;
             align-items: center;
+        }
+    }
+    
+    @media screen and (max-width: 1600px) {
+        .conteudo {
+            .botao {
+                width: 40px;
+                height: 40px;
+            }
         }
     }
 `

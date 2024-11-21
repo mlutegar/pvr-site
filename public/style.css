@@ -18,6 +18,11 @@
   --secundaria: hsla(135, 7%, 64%, 1);
   --destaque: hsla(8, 34%, 54%, 1);
   --detalhe:hsla(241, 96%, 72%, 1);
+
+  --titulo: 48px;
+  --subtitulo: 24px;
+  --corpo: 20px;
+  --botao: 24px;
 }
 
 /* borda vermelha em todos os elementos para debug */
@@ -30,7 +35,7 @@ body {
   color:var(--primaria);
   max-width: 1920px;
   font-family: Montserrat, serif;
-  font-size: 20px;
+  font-size: var(--corpo);
   font-weight: 400;
   margin: auto;
 }
@@ -46,3 +51,22 @@ div.container {
 h1,h2,h3,h4,h5,h6{
   margin: 0;
 }
+
+@media screen and (min-width: 1440px) {
+  :root {
+    --titulo: 38.4px;
+    --subtitulo: 19.2px;
+    --corpo: 16px;
+    --botao: 19.2px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  :root {
+    --titulo: 33.6px;
+    --subtitulo: 16.8px;
+    --corpo: 14px;
+    --botao: 16.8px;
+  }
+}
+

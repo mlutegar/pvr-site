@@ -5,9 +5,13 @@ const MergesAquisitionsStyle = styled.header`
     display: flex;
 
     .imagem {
-        width: 794px;
+        width: 50%;
         height: 631px;
         flex-shrink: 0;
+        
+        img{
+            width: 100%;
+        }
     }
 
     .conteudo {
@@ -21,7 +25,7 @@ const MergesAquisitionsStyle = styled.header`
     .titulo {
         color: #44617C;
         font-family: Montserrat;
-        font-size: 40px;
+        font-size: var(--titulo);
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -31,7 +35,7 @@ const MergesAquisitionsStyle = styled.header`
     .descricao {
         color: #000;
         font-family: Montserrat;
-        font-size: 20px;
+        font-size: var(--corpo);
         font-style: normal;
         font-weight: 400;
         line-height: 35px; /* 175% */
@@ -59,6 +63,21 @@ const MergesAquisitionsStyle = styled.header`
             width: 221px;
             height: 157px;
             flex-shrink: 0;
+        }
+    }
+
+    @media screen and (max-width: 1440px) {
+        .conteudo{
+            justify-content: flex-start;
+        }
+        
+        .imagem{
+            height: 550px;
+        }
+        
+        .imagem1, imagem2 {
+            width: 260px;
+            height: 130px;
         }
     }
 

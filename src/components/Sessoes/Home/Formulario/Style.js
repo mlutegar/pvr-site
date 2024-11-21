@@ -8,7 +8,7 @@ const FormularioStyle = styled.header`
 
     .dv-fo-titulo {
         color: white;
-        font-size: 40px;
+        font-size: var(--titulo);
         font-family: Montserrat, sans-serif;
         font-weight: 700;
         word-wrap: break-word;
@@ -16,7 +16,7 @@ const FormularioStyle = styled.header`
 
     .dv-fo-titulo-principal {
         color: white;
-        font-size: 40px;
+        font-size: var(--titulo);
         font-family: Montserrat, sans-serif;
         font-weight: 700;
         word-wrap: break-word;
@@ -25,7 +25,7 @@ const FormularioStyle = styled.header`
     .dv-fo-titulo-subtitulo {
         opacity: 0.6;
         color: white;
-        font-size: 24px;
+        font-size: var(--subtitulo);
         font-family: Montserrat, sans-serif;
         font-weight: 400;
         word-wrap: break-word;
@@ -34,8 +34,6 @@ const FormularioStyle = styled.header`
     .dv-fo-conteudo {
         color: white;
         padding-top: 20px;
-
-
     }
 
     .dv-fo-co-parte1 {
@@ -72,7 +70,7 @@ const FormularioStyle = styled.header`
             display: inline-flex;
 
             color: white;
-            font-size: 24px;
+            font-size: var(--botao);
             font-family: Montserrat, sans-serif;
             font-weight: 400;
             word-wrap: break-word;
@@ -87,7 +85,7 @@ const FormularioStyle = styled.header`
 
         color: #FFF;
         font-family: Montserrat;
-        font-size: 15px;
+        font-size: var(--corpo);
         font-style: normal;
         font-weight: 400;
         line-height: normal;

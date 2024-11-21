@@ -8,7 +8,7 @@ const BotaoStyle = styled.header`
         border: none;
         border-radius: 15px;
         cursor: pointer;
-        font-size: 24px;
+        font-size: var(--botao);
         font-family: Montserrat, sans-serif;
         font-weight: 400;
         color: ${(props) =>

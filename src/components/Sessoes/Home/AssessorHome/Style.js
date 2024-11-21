@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
 const AssessorHomeStyle = styled.header`
-    .Assessor {
-        background: url("imagens/assesor.png");
-        padding: 50px 150px;
-        opacity: 1;
-    }
+    background: url("imagens/assesor.png") no-repeat center center/cover;
+    padding: 50px 150px;
+    opacity: 1;
 
     .Assessor-conteudo {
         display: flex;
@@ -17,22 +15,22 @@ const AssessorHomeStyle = styled.header`
         transform: translateY(20px); /* Deslocado para baixo inicialmente */
         animation: fadeInUp 1s ease-out forwards;
         animation-delay: 0.2s; /* Animação com atraso */
-    }
 
-    .Assessor-titulo {
-        color: #E8E8E8;
-        font-size: 40px;
-        font-family: Montserrat, sans-serif;
-        font-weight: 700;
-        word-wrap: break-word;
-        opacity: 0;
-        animation: fadeIn 1s ease-out forwards;
-        animation-delay: 0.4s;
+        .Assessor-titulo {
+            color: #E8E8E8;
+            font-size: var(--titulo);
+            font-family: Montserrat, sans-serif;
+            font-weight: 700;
+            word-wrap: break-word;
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+            animation-delay: 0.4s;
+        }
     }
 
     .Assessor-corpo {
         color: white;
-        font-size: 20px;
+        font-size: var(--corpo);
         font-family: Montserrat, sans-serif;
         font-weight: 400;
         line-height: 35px;
@@ -42,37 +40,18 @@ const AssessorHomeStyle = styled.header`
         animation-delay: 0.6s;
     }
 
-    .btn-assessor {
-        padding-top: 18px;
-        padding-bottom: 19px;
-        padding-left: 92px;
-        padding-right: 92px;
-
-        background: #577FA4;
-        border-radius: 15px;
-        overflow: hidden;
-        justify-content: center;
-        align-items: center;
-        display: inline-flex;
-
-        color: white;
-        font-size: 24px;
-        font-family: Montserrat, sans-serif;
-        font-weight: 400;
-        word-wrap: break-word;
-        opacity: 0;
-        transform: scale(0.9); /* Inicialmente menor */
-        animation: zoomInButton 1s ease-out forwards;
-        animation-delay: 0.8s; /* Animação com atraso */
-        transition: transform 0.3s ease;
-    }
-
-    .btn-assessor:hover {
-        transform: scale(1.05); /* Aumenta ligeiramente o botão no hover */
-    }
-
     .dv-assessor-botao {
         padding-bottom: 50px;
+    }
+
+    @media screen and (max-width: 1600px) {
+        .assessor-conteudo {
+            width: 60%;
+        }
+        
+        .dv-assessor-botao {
+            padding-bottom: 40px;
+        }
     }
 
     /* Keyframes para as animações */
@@ -119,4 +98,4 @@ const AssessorHomeStyle = styled.header`
     }
 `;
 
-export { AssessorHomeStyle };
+export {AssessorHomeStyle};

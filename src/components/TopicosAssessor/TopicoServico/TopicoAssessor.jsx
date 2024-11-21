@@ -2,7 +2,7 @@ import { TopicoAssessorStyle } from "./Style";
 
 const TopicoAssessor = ({ titulo, descricao }) => (
     <TopicoAssessorStyle>
-        <div className="titulo">
+        <div className="topico">
             <img src="imagens/triangulo.png"/> {titulo}
         </div>
         <div className="descricao">

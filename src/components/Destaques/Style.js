@@ -7,7 +7,7 @@ const DestaquesStyle = styled.header`
     .titulo {
         color: #FFF;
         font-family: Montserrat;
-        font-size: 40px;
+        font-size: var(--titulo);
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -21,7 +21,7 @@ const DestaquesStyle = styled.header`
 
         color: #FFF;
         font-family: Montserrat;
-        font-size: 20px;
+        font-size: var(--corpo);
         font-style: normal;
         font-weight: 400;
         line-height: normal;

@@ -1,13 +1,17 @@
 import {NossosServicosStyle} from "./Style";
 import {Link} from "react-router-dom";
 import Botao from "../../../Itens/Botao/Botao";
+import {LangContext} from "../../../../context/LangContext";
+import {useContext} from "react";
 
 const NossosServicos = () => {
+    const { lang, setLang } = useContext(LangContext);
+
     return (
         <NossosServicosStyle>
             <div className="dv-nossos-servicos">
                 <div className="dv-nossos-servicos-titulo">
-                    Nossos Serviços
+                    {lang === "PT" ? "Nossos Serviços" : "Our Services"}
                 </div>
                 <div className="dv-nossos-servicos-conteudo">
                     <div className="cd-nossos-servicos">
@@ -15,7 +19,7 @@ const NossosServicos = () => {
                             <img className="Icone" src="imagens/icone1.png" alt="Ícone 1"/>
                         </div>
                         <div className="cd-titulo-nossos-servicos">
-                            Mergers & Aquisitions
+                            {lang === "PT" ? "Mergers & Aquisições" : "Mergers & Aquisitions"}
                         </div>
                         <div className="cd-conteudo-nossos-servicos">
                             Fusões & Aquisições<br/>Spin-offs<br/>Fairness opinions<br/>Valuations<br/>Planejamento
@@ -28,7 +32,7 @@ const NossosServicos = () => {
                             <img className="Icone" src="imagens/icone2.png" alt="Ícone 2"/>
                         </div>
                         <div className="cd-titulo-nossos-servicos">
-                            Consultoria Especializada
+                            {lang === "PT" ? "Consultoria Especializada" : "Specialized Consulting"}
                         </div>
                         <div className="cd-conteudo-nossos-servicos">
                             Análise macroeconômica e setorial<br/>Entendimento de pontos críticos e definição de
@@ -41,7 +45,8 @@ const NossosServicos = () => {
                             <img className="Icone" src="imagens/icone3.png" alt="Ícone 3"/>
                         </div>
                         <div className="cd-titulo-nossos-servicos">
-                            Dívida Estruturada
+                            {lang === "PT" ? "Dívida Estruturada" : "Structured Debt"}
+
                         </div>
                         <div className="cd-conteudo-nossos-servicos">
                             Debêntures<br/>CRA, CRI e FIDC<br/>Entre outros produtos

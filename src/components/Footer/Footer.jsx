@@ -1,13 +1,14 @@
 import { FooterStyle } from "./Style";
+import {Link} from "react-router-dom";
 
 const Footer = () => (
     <FooterStyle>
         <div className="dv-fr-conteudo">
             <div className="dv-fr-co-nav">
-                <a href="/assessor" className="Nav-item QuemSomos" id="navQuemSomosFooter">Quem somos</a>
-                <a href="/servicos" className="Nav-item Servicos-posicao" id="navServicosFooter">Serviços</a>
-                <a href="/transacoes" className="Nav-item Equipe-posicao" id="navEquipeFooter">Equipe</a>
-                <a href="/contato" className="Nav-item Contato-posicao" id="navContatoFooter">Contato</a>
+                <Link to="/" className="NavbarItem" id="navQuemSomos">Home</Link>
+                <Link to="/servicos" className="NavbarItem" id="navServicos">Serviços</Link>
+                <Link to="/transacoes" className="NavbarItem" id="navEquipe">Transações</Link>
+                <Link to="/#equipe" className="NavbarItem" id="navContato">Quem somos</Link>
             </div>
             <div className="dv-fr-co-logo">
                 <img className="Logo Logo-posicao" src="imagens/pvr.png"/>

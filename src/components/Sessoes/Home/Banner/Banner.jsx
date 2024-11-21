@@ -1,34 +1,38 @@
-import { BannerStyle } from "./Style";
+import {BannerStyle} from "./Style";
+import {LangContext} from "../../../../context/LangContext";
+import {useContext} from "react";
 
-const Banner = () => (
-    <BannerStyle>
-        <div className="banner mp">
-            <div>
-                <div>
-                    <div className="Titulo">
-                        <span className="Titulo-destaque">Performance,</span>
-                        <span className="Titulo-destaque">Valor e</span>
-                        <span className="Titulo-destaque">Resultado:</span>
-                        <span className="Titulo-subtitulo">Estratégia Financeira</span>
-                        <span className="Titulo-subtitulo">para o Sucesso Empresarial.</span>
-                    </div>
-                </div>
+const Banner = () => {
+    const { lang, setLang } = useContext(LangContext);
+
+    return (
+        <BannerStyle>
+            <div className="Titulo">
+            <span className="Titulo-destaque">
+                {lang === "PT" ? "Performance," : "Performance,"}
+            </span>
+                <span className="Titulo-destaque">
+                    {lang === "PT" ? "Valor e" : "Value and"}
+            </span>
+                <span className="Titulo-destaque">
+                    {lang === "PT" ? "Resultado:" : "Result:"}
+            </span>
+                <span className="Titulo-subtitulo">
+                    {lang === "PT" ? "Estratégia Financeira" : "Financial Strategy"}
+            </span>
+                <span className="Titulo-subtitulo">
+                    {lang === "PT" ? "para o Sucesso Empresarial." : "for Business Success."}
+            </span>
             </div>
 
-            <div>
-                <div className="Grafico">
-                    <div className="Coluna1"
-                         style={{ width: '141px', height: '161px', opacity: 0.60, background: '#E8E8E8' }}></div>
-                    <div className="Coluna2"
-                         style={{ width: '141px', height: '269px', opacity: 0.60, background: '#577FA4' }}></div>
-                    <div className="Coluna3"
-                         style={{ width: '141px', height: '567px', opacity: 0.60, background: '#44617C' }}></div>
-                    <div className="Coluna4"
-                         style={{ width: '141px', height: '695px', opacity: 0.60, background: '#D0D0D0' }}></div>
-                </div>
+            <div className="Grafico">
+                <div className="Coluna1"></div>
+                <div className="Coluna2"></div>
+                <div className="Coluna3"></div>
+                <div className="Coluna4"></div>
             </div>
-        </div>
-    </BannerStyle>
-)
+        </BannerStyle>
+    )
+}
 
 export default Banner;

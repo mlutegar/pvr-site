@@ -1,7 +1,7 @@
 import Base from "./Base";
 import TransacoesInteiro from "../components/TransacoesInteiro/TransacoesInteiro";
 
-const TransacoesPage = () => {
+const Transacoes = () => {
     return (
         <Base>
             <TransacoesInteiro/>
@@ -9,4 +9,4 @@ const TransacoesPage = () => {
     )
 }
 
-export default TransacoesPage
+export default Transacoes

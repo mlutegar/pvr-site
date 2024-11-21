@@ -1,24 +1,28 @@
-import {useState, useEffect} from 'react';
+import {useState, useEffect, useContext} from 'react';
 import {TransacoesStyle} from "./Style";
 import transacoesData from "../../../../data/transacoesdata.json";
 import TransacaoCard from "../../../TransacaoCard/TransacaoCard";
 import Botao from "../../../Itens/Botao/Botao";
+import {LangContext} from "../../../../context/LangContext";
 
 const Transacoes = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isAnimating, setIsAnimating] = useState(false);
     const [transacoes, setTransacoes] = useState(transacoesData);
+    const { lang, setLang } = useContext(LangContext);
 
     const renderTransacoes = () => {
         const visibleTransacoes = transacoes.slice(currentIndex, currentIndex + 3);
-        return visibleTransacoes.map((transacao, index) => (
-            <TransacaoCard
-                key={index}
-                transacao={transacao}
-                isCardMenor={index === 0 || index === 2}
-                numero={index}
-            />
-        ));
+        return visibleTransacoes.map((transacao, index) => {
+            return (
+                <TransacaoCard
+                    key={index}
+                    transacao={transacao}
+                    numero={index}
+                    style={index === 1 || index === 3 ? {} : {transform: 'scale(0.85)', opacity: 0.9}}
+                />
+            );
+        });
     };
 
     const handleNext = () => {
@@ -47,8 +51,12 @@ const Transacoes = () => {
         <TransacoesStyle>
             <div className="header">
                 <div className="titulo">
-                    <div className="titulo-principal">Transações</div>
-                    <div className="subtitulo">Nossas últimas transações</div>
+                    <div className="titulo-principal">
+                        {lang === "PT" ? "Transações" : "Transactions"}
+                    </div>
+                    <div className="subtitulo">
+                        {lang === "PT" ? "Nossas últimas transações" : "Our latest transactions"}
+                    </div>
                 </div>
                 <div>
                     <Botao
