@@ -74,6 +74,16 @@ const ContatoStyle = styled.header`
             flex-direction: column;
         }
     }
+    
+    @media screen and (max-width: 426px) {
+        .Mapa .Mapa-contato {
+            width: 70%;
+        }
+        
+        .Mapa-contato {
+            width: 70%;
+        }
+    }
 
     @keyframes fadeIn {
         from {

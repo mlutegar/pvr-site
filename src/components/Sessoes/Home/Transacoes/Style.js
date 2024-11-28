@@ -85,6 +85,55 @@ const TransacoesStyle = styled.header`
             }
         }
     }
+    
+    @media screen and (max-width: 769px) {
+        padding: 0;
+        
+        .header {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            
+            .titulo {
+                text-align: center;
+                
+                .titulo-principal {
+                    font-size: var(--titulo-mobile);
+                    width: 300px;
+                }
+                
+                .subtitulo {
+                    font-size: var(--subtitulo-mobile);
+                    width: 300px;
+                }
+            }
+        }
+        
+        .conteudo {
+            flex-direction: column;
+            gap: 20px;
+            height: 100%;
+            
+            .botao {
+                display: none;
+            }
+            
+            .cards {
+                justify-content: center;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        padding: 0;
+        
+        .header{
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }
 `
 
 export {TransacoesStyle}

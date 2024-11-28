@@ -51,6 +51,20 @@ const FooterStyle = styled.header`
         align-items: center;
         animation: fadeInUp 1.5s ease-in-out;
     }
+    
+    @media screen and (max-width: 426px) {
+        padding: 0;   
+        
+        .dv-fr-conteudo {
+            flex-direction: column;
+            padding-top: 0;
+        }
+        
+        .dv-fr-co-nav {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
 
     @keyframes fadeIn {
         from {

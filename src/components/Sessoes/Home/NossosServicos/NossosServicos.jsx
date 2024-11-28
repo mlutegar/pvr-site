@@ -57,11 +57,11 @@ const NossosServicos = () => {
                 <div>
                     <div className="Graficopequeno1">
                         <div className="Coluna1"
-                             style={{width: '80px', height: '45px', opacity: 0.30, background: '#D9D9D9'}}></div>
+                             style={{height: '45px', opacity: 0.30, background: '#D9D9D9'}}></div>
                         <div className="Coluna2"
-                             style={{width: '80px', height: '113px', opacity: 0.30, background: '#EFEFEF'}}></div>
+                             style={{height: '113px', opacity: 0.30, background: '#EFEFEF'}}></div>
                         <div className="Coluna3"
-                             style={{width: '80px', height: '184px', opacity: 0.30, background: '#577FA4'}}></div>
+                             style={{height: '184px', opacity: 0.30, background: '#577FA4'}}></div>
                     </div>
                 </div>
 
@@ -76,11 +76,11 @@ const NossosServicos = () => {
                 <div>
                     <div className="Graficopequeno2">
                         <div className="Coluna1"
-                             style={{width: '80px', height: '45px', opacity: 0.30, background: '#D9D9D9'}}></div>
+                             style={{height: '45px', opacity: 0.30, background: '#D9D9D9'}}></div>
                         <div className="Coluna2"
-                             style={{width: '80px', height: '113px', opacity: 0.30, background: '#EFEFEF'}}></div>
+                             style={{height: '113px', opacity: 0.30, background: '#EFEFEF'}}></div>
                         <div className="Coluna3"
-                             style={{width: '80px', height: '184px', opacity: 0.30, background: '#577FA4'}}></div>
+                             style={{height: '184px', opacity: 0.30, background: '#577FA4'}}></div>
                     </div>
                 </div>
             </div>

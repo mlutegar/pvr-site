@@ -4,6 +4,7 @@ const HeaderMobileStyle = styled.header`
     font-family: Montserrat, serif;
     font-size: var(--corpo);
     font-weight: 400;
+    padding: 0;
     
     .menuMobile {
         display: none;

@@ -159,9 +159,51 @@ const BannerStyle = styled.header`
     }
     
     @media screen and (max-width: 768px) {
+        .Titulo {
+            font-size: 3.5em;
+            padding: 300px 0;
+        }
+        
         .Grafico {
             .Coluna1, .Coluna2, .Coluna3, .Coluna4 {
                 width: 120px;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .Titulo {
+            font-size: 1.5em;
+            padding: 300px 0;
+        }
+        
+        .Grafico {
+            .Coluna1, .Coluna2, .Coluna3, .Coluna4 {
+                width: 60px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 376px) {
+        .Titulo {
+            font-size: 1em;
+        }
+
+        .Grafico {
+            .Coluna1, .Coluna2, .Coluna3, .Coluna4 {
+                width: 40px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 321px) {
+        .Titulo {
+            font-size: 1em;
+        }
+
+        .Grafico {
+            .Coluna1, .Coluna2, .Coluna3, .Coluna4 {
+                width: 20px;
             }
         }
     }

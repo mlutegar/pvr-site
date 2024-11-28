@@ -15,17 +15,17 @@ const AssessorHomeStyle = styled.header`
         transform: translateY(20px); /* Deslocado para baixo inicialmente */
         animation: fadeInUp 1s ease-out forwards;
         animation-delay: 0.2s; /* Animação com atraso */
+    }
 
-        .Assessor-titulo {
-            color: #E8E8E8;
-            font-size: var(--titulo);
-            font-family: Montserrat, sans-serif;
-            font-weight: 700;
-            word-wrap: break-word;
-            opacity: 0;
-            animation: fadeIn 1s ease-out forwards;
-            animation-delay: 0.4s;
-        }
+    .Assessor-titulo {
+        color: #E8E8E8;
+        font-size: var(--titulo);
+        font-family: Montserrat, sans-serif;
+        font-weight: 700;
+        word-wrap: break-word;
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
+        animation-delay: 0.4s;
     }
 
     .Assessor-corpo {
@@ -59,6 +59,12 @@ const AssessorHomeStyle = styled.header`
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    
+    @media screen and (max-width: 321px) {
+        .Assessor-conteudo{
+            width: auto;
+        }
     }
 
     /* Keyframes para as animações */

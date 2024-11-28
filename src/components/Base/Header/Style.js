@@ -7,6 +7,7 @@ const HeaderStyle = styled.header`
     
     .menuMobile {
         display: none;
+
     }
 
 
@@ -80,7 +81,6 @@ const HeaderStyle = styled.header`
 
     .mobile {
         display: none;
-
         justify-content: space-between;
         align-items: center;
         padding: 10px 100px;
@@ -196,6 +196,13 @@ const HeaderStyle = styled.header`
         .mobile {
             display: flex;
         }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .mobile{
+            padding: 0;
+        }
+        
     }
 `
 

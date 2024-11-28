@@ -212,6 +212,10 @@ const NossaEquipeStyle = styled.header`
             flex-direction: column;
         }
     }
+    
+    @media screen and (max-width: 321px) {
+        width: auto;
+    }
 
     /* Keyframes for animations */
     @keyframes fadeIn {

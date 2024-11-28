@@ -85,7 +85,6 @@ const NossosServicosStyle = styled.header`
 
     .Graficopequeno1 {
         transform: scaleX(-1);
-        /* transform-origin: 0 0; */
         justify-content: center;
         align-items: flex-end;
         gap: 29px;
@@ -96,11 +95,6 @@ const NossosServicosStyle = styled.header`
     }
 
     .Graficopequeno2 {
-        /* width: 298px; */
-        /* height: 184px; */
-        /* left: 1499px; */
-        /* position: relative; */
-        /* justify-content: center; */
         align-items: flex-end;
         gap: 29px;
         display: inline-flex;
@@ -108,6 +102,10 @@ const NossosServicosStyle = styled.header`
         opacity: 0;
         animation-delay: 1.4s;
         transform: scaleX(1);
+    }
+    
+    .Coluna1, .Coluna2, .Coluna3{
+        width: 80px;   
     }
     
     @media screen and (max-width: 1600px) {
@@ -148,6 +146,26 @@ const NossosServicosStyle = styled.header`
         .dv-nossos-servicos-conteudo{
             flex-direction: column;
             align-items: center;
+        }
+    }
+
+    @media screen and (max-width: 769px) {
+        .Graficopequeno1, .Graficopequeno2 {
+            gap: 5px;
+        }
+
+        .Coluna1, .Coluna2, .Coluna3{
+            width: 50px;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .Graficopequeno1, .Graficopequeno2 {
+            display: none;
+        }
+
+        .Coluna1, .Coluna2, .Coluna3{
+            width: 50px;
         }
     }
     
