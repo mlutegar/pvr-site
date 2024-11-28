@@ -1,18 +1,22 @@
 import {useState, useEffect, useContext} from 'react';
 import {TransacoesStyle} from "./Style";
 import transacoesData from "../../../../data/transacoesdata.json";
-import TransacaoCard from "../../../TransacaoCard/TransacaoCard";
+import TransacaoCard from "../../../Itens/TransacaoCard/TransacaoCard";
 import Botao from "../../../Itens/Botao/Botao";
 import {LangContext} from "../../../../context/LangContext";
 
 const Transacoes = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+
+    const isSmallScreen = window.matchMedia("(max-width: 1024px)").matches;
+    const [visibleCards, setVisibleCards] = useState(isSmallScreen ? 1 : 3);
+
     const [isAnimating, setIsAnimating] = useState(false);
     const [transacoes, setTransacoes] = useState(transacoesData);
     const { lang, setLang } = useContext(LangContext);
 
     const renderTransacoes = () => {
-        const visibleTransacoes = transacoes.slice(currentIndex, currentIndex + 3);
+        const visibleTransacoes = transacoes.slice(currentIndex, currentIndex + visibleCards);
         return visibleTransacoes.map((transacao, index) => {
             return (
                 <TransacaoCard
@@ -42,6 +46,21 @@ const Transacoes = () => {
             setIsAnimating(false);
         }, 500); // duração da animação
     };
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia("(max-width: 1024px)");
+
+        const handleScreenChange = (e) => {
+            setVisibleCards(e.matches ? 1 : 3);
+        };
+
+        // Adiciona o listener
+        mediaQuery.addEventListener("change", handleScreenChange);
+
+        // Cleanup no unmount
+        return () => mediaQuery.removeEventListener("change", handleScreenChange);
+    }, []);
+
 
     useEffect(() => {
         renderTransacoes();

@@ -1,17 +1,16 @@
+
 # React Base Project
 
 Esse é um projeto de uma aplicação base usando React e Firebase construído com motivações didáticas.
-
 
 ## Dependências
 
 - https://nodejs.org/en : Necessário para rodar o projeto localmente.
 - https://git-scm.com/ : Necessário para versionar as modificações no projeto.
 
-
 ## Instalação
 
-1. Faça um fork do repositório em sua conta no gitlab, github, ou outro serviço semelhante que use o git como ferramente de versionamento; 
+1. Faça um fork do repositório em sua conta no gitlab, github, ou outro serviço semelhante que use o git como ferramente de versionamento;
 2. Clone o seu novo repositório para fazer as modificações necessárias ao seu projeto em sua máquina local;
 3. Execute o comando `npm install` no diretório raiz do projeto para instalar os módulos e bibliotecas necessários para o projeto
 
@@ -25,3 +24,7 @@ O comando de execução local do projeto de ver executado no diretório raiz e d
 ## Versão de Produção
 
 Utilize o comando `npm run build` para construir uma versão pronta para produção. Os arquivos dessa versão estarão disponíveis na pasta *build*.
+
+## Deploy
+
+Utilize o comando `npm run deploy` para realizar o deploy da versão de produção em um serviço configurado para o projeto, como o Firebase Hosting.

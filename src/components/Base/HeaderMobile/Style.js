@@ -1,12 +1,21 @@
 import styled from "styled-components"
 
-const HeaderStyle = styled.header`
+const HeaderMobileStyle = styled.header`
+    font-family: Montserrat, serif;
+    font-size: var(--corpo);
+    font-weight: 400;
+    
+    .menuMobile {
+        display: none;
+    }
+
+
     .desktop {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px;
-        margin: 50px 150px 0;
+        margin: 0 150px 0;
         max-width: 1920px;
 
         .left {
@@ -19,9 +28,6 @@ const HeaderStyle = styled.header`
         .center {
             display: flex;
             gap: 70px;
-            font-family: Montserrat, serif;
-            font-size: var(--corpo);
-            font-weight: 400;
 
             & a {
                 text-decoration: none;
@@ -69,6 +75,7 @@ const HeaderStyle = styled.header`
                 color: #44617C;
             }
         }
+
     }
 
     .mobile {
@@ -103,15 +110,18 @@ const HeaderStyle = styled.header`
                 border: none;
                 cursor: pointer;
                 max-width: 1920px;
-                
-                svg{
+                z-index: 2;
+
+                svg {
                     width: 100px;
                     height: 70px;
+                    color: #44617C;
                 }
+
             }
         }
     }
-    
+
     @media (max-width: 1440px) {
         .left {
             img {
@@ -137,6 +147,48 @@ const HeaderStyle = styled.header`
     }
 
     @media (max-width: 1024px) {
+        .ativo {
+            display: flex;
+            position: absolute;
+            align-items: flex-end;
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+
+        .desativo {
+            display: none;
+        }
+
+        .menuMobile {
+            background: white;
+            width: 80%;
+            height: 100vh;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            justify-content: center;
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-family: Montserrat, serif;
+                font-size: var(--titulo);
+                font-weight: 400;
+            }
+
+            .menuItens {
+                display: flex;
+                flex-direction: column;
+                font-size: var(--corpo);
+                font-weight: 400;
+                font-family: Montserrat, serif;
+                text-align: center;
+                padding: 150px 100px;
+                margin-top: 650px;
+                gap: 100px;
+            }
+        }
+
         .desktop {
             display: none;
         }
@@ -147,4 +199,4 @@ const HeaderStyle = styled.header`
     }
 `
 
-export {HeaderStyle}
+export {HeaderMobileStyle}

@@ -53,6 +53,13 @@ const AssessorHomeStyle = styled.header`
             padding-bottom: 40px;
         }
     }
+    
+    @media screen and (max-width: 1024px) {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     /* Keyframes para as animações */
     @keyframes fadeInBackground {

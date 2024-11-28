@@ -1,9 +1,9 @@
 import {useState, useEffect} from 'react';
 import {TransacoesInteiroStyle} from "./Style";
 
-import transacoesData from "../../data/transacoesdata.json";
-import TransacaoCard from "../TransacaoCard/TransacaoCard";
-import Botao from "../Itens/Botao/Botao";
+import transacoesData from "../../../../data/transacoesdata.json";
+import TransacaoCard from "../../../Itens/TransacaoCard/TransacaoCard";
+import Botao from "../../../Itens/Botao/Botao";
 
 const TransacoesInteiro = () => {
     const [currentPage, setCurrentPage] = useState(1);

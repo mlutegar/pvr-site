@@ -63,10 +63,10 @@ h1,h2,h3,h4,h5,h6{
 
 @media screen and (max-width: 1024px){
   :root {
-    --titulo: 33.6px;
-    --subtitulo: 16.8px;
-    --corpo: 14px;
-    --botao: 16.8px;
+    --titulo: 48px;
+    --subtitulo: 24px;
+    --corpo: 20px;
+    --botao: 24px;
   }
 }
 

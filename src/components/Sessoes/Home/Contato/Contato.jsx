@@ -1,5 +1,5 @@
 import {ContatoStyle} from "./Style";
-import MapComponent from "../../../MapComponent/MapComponent";
+import MapComponent from "./MapComponent/MapComponent";
 
 const Contato = () => (
     <ContatoStyle>

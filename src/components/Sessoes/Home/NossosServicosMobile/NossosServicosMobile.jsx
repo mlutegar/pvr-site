@@ -1,14 +1,13 @@
-import {NossosServicosStyle} from "./Style";
-import {Link} from "react-router-dom";
+import {NossosServicosMobileStyle} from "./Style";
 import Botao from "../../../Itens/Botao/Botao";
 import {LangContext} from "../../../../context/LangContext";
 import {useContext} from "react";
 
-const NossosServicos = () => {
+const NossosServicosMobile = () => {
     const { lang, setLang } = useContext(LangContext);
 
     return (
-        <NossosServicosStyle>
+        <NossosServicosMobileStyle>
             <div className="dv-nossos-servicos-titulo">
                 {lang === "PT" ? "Nossos Serviços" : "Our Services"}
             </div>
@@ -84,8 +83,8 @@ const NossosServicos = () => {
                     </div>
                 </div>
             </div>
-        </NossosServicosStyle>
+        </NossosServicosMobileStyle>
     );
 }
 
-export default NossosServicos;
+export default NossosServicosMobile;

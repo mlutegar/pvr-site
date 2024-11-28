@@ -63,6 +63,17 @@ const ContatoStyle = styled.header`
         word-wrap: break-word;
         animation: fadeInUp 1.5s ease-in-out;
     }
+    
+    @media screen and (max-width: 1024px) {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .dv-co-conteudo {
+            flex-direction: column;
+        }
+    }
 
     @keyframes fadeIn {
         from {

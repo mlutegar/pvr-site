@@ -9,6 +9,7 @@ import Contato from "../components/Sessoes/Home/Contato/Contato";
 import Formulario from "../components/Sessoes/Home/Formulario/Formulario";
 import {useLocation} from "react-router-dom";
 import {useEffect} from "react";
+import NossaHistoriaMobile from "../components/Sessoes/Home/NossaHistoriaMobile/NossaHistoriaMobile";
 
 const Home = () => {
     const location = useLocation();
@@ -27,6 +28,7 @@ const Home = () => {
         <Base>
             <Banner/>
             <NossaHistoria/>
+            <NossaHistoriaMobile/>
             <NossosServicos/>
             <AssessorHome/>
             <TransacoesHome/>

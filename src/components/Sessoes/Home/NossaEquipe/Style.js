@@ -201,6 +201,17 @@ const NossaEquipeStyle = styled.header`
         .redes {
         }
     }
+    
+    @media screen and (max-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+    
+        .dv-ne-conteudo {
+            flex-direction: column;
+        }
+    }
 
     /* Keyframes for animations */
     @keyframes fadeIn {

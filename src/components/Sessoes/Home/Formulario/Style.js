@@ -103,6 +103,26 @@ const FormularioStyle = styled.header`
     .mensagem {
         width: 350%;
     }
+    
+    @media (max-width: 1024px) {
+        padding: 50px 0;
+        
+        .dv-fo-co-parte1 {
+            flex-direction: column;
+        }
+        
+        .dv-fo-co-parte2 {
+            flex-direction: column;
+        }
+
+        .mensagem {
+            width: auto;
+        }
+
+        .dv-fo-co-item-button {
+            align-items: center;
+        }
+    }
 `
 
 export {FormularioStyle}

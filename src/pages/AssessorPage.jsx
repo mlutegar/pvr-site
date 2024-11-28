@@ -1,7 +1,7 @@
 import Base from "./Base";
-import TituloAssessor from "../components/TituloAssessor/TituloAssessor";
-import TopicosAssessor from "../components/TopicosAssessor/TopicosAssessor";
-import Destaques from "../components/Destaques/Destaques";
+import TituloAssessor from "../components/Sessoes/AssessorSessao/TituloAssessor/TituloAssessor";
+import TopicosAssessor from "../components/Sessoes/AssessorSessao/TopicosAssessor/TopicosAssessor";
+import Destaques from "../components/Sessoes/AssessorSessao/Destaques/Destaques";
 
 const AssessorPage = () => {
     return (

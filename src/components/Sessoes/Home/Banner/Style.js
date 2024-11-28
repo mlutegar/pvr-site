@@ -13,11 +13,13 @@ const BannerStyle = styled.header`
     max-width: 1920px;
 
     .Titulo {
+        font-size: 3.1em;
+        padding-bottom: 150px;
+
         .Titulo-destaque,
         .Titulo-subtitulo {
             display: block;
             color: #44617C;
-            font-size: var(--titulo);
             font-family: Montserrat, serif;
             font-weight: 700; /* Ajuste para o subtítulo se necessário */
             word-wrap: break-word;
@@ -32,6 +34,7 @@ const BannerStyle = styled.header`
 
     .Grafico {
         display: flex;
+        font-size: 16px;
         gap: 20px;
         align-items: flex-end;
         opacity: 0; /* Inicialmente invisível */
@@ -39,7 +42,7 @@ const BannerStyle = styled.header`
         animation-delay: 0.7s;
         
         .Coluna1, .Coluna2, .Coluna3, .Coluna4 {
-            width: 141px;
+            width: 8.813rem;
             opacity: 0.60;
         }
 
@@ -92,13 +95,6 @@ const BannerStyle = styled.header`
 
 
     @media screen and (max-width: 1440px) {
-        .Titulo {
-            .Titulo-destaque,
-            .Titulo-subtitulo {
-                font-size: 44px;
-            }
-        }
-
         .Grafico {
             .Coluna1, .Coluna2, .Coluna3, .Coluna4 {
                 width: 80px;
@@ -118,6 +114,54 @@ const BannerStyle = styled.header`
 
             .Coluna4 {
                 height: 485px;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 1024px) {
+        padding: 0;
+        position: relative;
+
+        .Titulo {
+            font-size: 5.5em;
+            padding: 300px 0;
+        }
+        
+        .Grafico {
+            position: absolute;
+            
+            .Coluna1, .Coluna2, .Coluna3, .Coluna4 {
+                width: 181px;
+                opacity: 0.22;
+                
+            }
+
+            .Coluna1 {
+                height: 450px;
+                background: #E8E8E8;
+            }
+
+            .Coluna2 {
+                height: 710px;
+                background: #577FA4;
+            }
+
+            .Coluna3 {
+                height: 1130px;
+                background: #44617C;
+            }
+
+            .Coluna4 {
+                height: 1550px;
+                background: #D0D0D0;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .Grafico {
+            .Coluna1, .Coluna2, .Coluna3, .Coluna4 {
+                width: 120px;
             }
         }
     }

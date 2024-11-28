@@ -1,18 +1,14 @@
 import styled from "styled-components";
 
-const NossaHistoriaStyle = styled.header`
-    display: flex;
+const NossaHistoriaMobileStyle = styled.header`
     padding: 50px 150px;
     opacity: 0; /* Inicialmente invisível */
     transform: translateY(20px); /* Começa deslocado para baixo */
     animation: fadeInUp 1s ease-out forwards; /* Animação para a seção inteira */
     background: #f5f5f5;
+    display: none;
     
-    
-
     .imagem-nossa-historia {
-        width: 50%;
-        
         & img {
             width: 100%;
             opacity: 0; /* Inicialmente invisível */
@@ -23,7 +19,6 @@ const NossaHistoriaStyle = styled.header`
     }
     
     .conteudo-nossa-historia {
-        width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -34,6 +29,9 @@ const NossaHistoriaStyle = styled.header`
         
         .titulo-nossa-historia {
             margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
             .titulo-principal-nossa-historia {
                 color: rgb(68, 97, 124);
@@ -60,6 +58,7 @@ const NossaHistoriaStyle = styled.header`
     }
     
     .corpo-nossa-historia {
+        margin-bottom: 50px;
         margin-top: 20px;
         color: black;
         font-size: var(--corpo);
@@ -92,7 +91,10 @@ const NossaHistoriaStyle = styled.header`
     }
     
     @media screen and (max-width: 1024px) {
-        display: none;
+        display: flex;
+        padding: 50px 0;
+        flex-direction: column;
+        align-items: center;
     }
 
     /* Keyframes para animações */
@@ -141,4 +143,4 @@ const NossaHistoriaStyle = styled.header`
     }
 `;
 
-export { NossaHistoriaStyle };
+export { NossaHistoriaMobileStyle };

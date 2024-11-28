@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const NossosServicosStyle = styled.header`
+const NossosServicosMobileStyle = styled.header`
     background: #44617c;
     padding: 50px 150px 0;
     opacity: 0;
@@ -219,4 +219,4 @@ const NossosServicosStyle = styled.header`
     }
 `;
 
-export { NossosServicosStyle };
+export { NossosServicosMobileStyle };
