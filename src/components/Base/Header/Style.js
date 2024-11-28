@@ -198,9 +198,23 @@ const HeaderStyle = styled.header`
         }
     }
     
-    @media screen and (max-width: 426px) {
+    @media screen and (max-width: 768px) {
         .mobile{
-            padding: 0;
+            padding: 20px;
+
+            .left {
+                img {
+                    width: 120px;
+                    height: 70px;
+                }
+            }
+
+            .buggerMenu {
+                svg {
+                    width: 50px;
+                    height: 50px;
+                    color: #44617C;
+                }
         }
         
     }
