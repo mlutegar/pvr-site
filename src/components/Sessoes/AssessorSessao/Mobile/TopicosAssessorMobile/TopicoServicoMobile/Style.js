@@ -4,10 +4,9 @@ const TopicoAssessorMobileStyle = styled.header`
     display: none;
     margin-top: 50px;
     font-family: Montserrat,sans-serif;
-
-    width: 100%;
-    text-align: center;
+    text-align: left;
     flex-direction: column;
+    padding: 0 20px;
     
     .topico {
         color: #577FA4;

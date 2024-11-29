@@ -10,6 +10,10 @@ const NossosServicosMobileStyle = styled.header`
     align-items: center;
     font-size: var(--titulo);
     font-family: Montserrat, sans-serif;
+    
+    .dv-paginacao{
+        margin-bottom: 20px;
+    }
 
     .dv-nossos-servicos-titulo {
         color: white;
@@ -64,11 +68,16 @@ const NossosServicosMobileStyle = styled.header`
     }
     
     .dv-nossos-servicos-botoes{
+        width: 100%;
+        position: absolute;
+        top: 50%;
         display: flex;
         gap: 20px;
         padding: 20px 0;
+        justify-content: space-between;
         
         button {
+            margin: 0 20px;
             padding: 5px 10px;
         }
     }
@@ -76,16 +85,21 @@ const NossosServicosMobileStyle = styled.header`
     .cd-conteudo-nossos-servicos {
         text-align: center;
         color: white;
-        font-size: 0.8em;
+        //font-size: 0.8em;
         font-family: Montserrat, sans-serif;
         font-weight: 400;
-        line-height: 35px;
+        line-height: 22px;
         word-wrap: break-word;
         padding-top: 15px;
         opacity: 0;
         animation: fadeInText 1s ease-out forwards;
         animation-delay: 1.2s;
         width: 300px;
+    }
+    
+    ul{
+        list-style: none;
+        padding: 0;
     }
     
     .dv-nossos-servicos-botao {

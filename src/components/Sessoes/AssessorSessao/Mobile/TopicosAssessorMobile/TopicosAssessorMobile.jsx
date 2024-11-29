@@ -13,7 +13,7 @@ const TopicosAssessorMobile = () => (
         />
 
         <TopicoAssessorMobile
-            titulo="Título Exemplo"
+            titulo="Buy-side"
             descricao={[
                 "Equipe dedicada na busca e acesso aos targets que se adequem a estratégia do cliente, reduzindo o tempo de seleção",
                 "Maior compreensão da realidade do lado vendedor, uma vez que Middle Market é majoritariamente composto por empresas familiares",
@@ -22,24 +22,13 @@ const TopicosAssessorMobile = () => (
         />
 
         <TopicoAssessorMobile
-            titulo="Título Exemplo"
+            titulo="Emissão de dívida"
             descricao={[
                 "Possibilidade de maior entendimento das necessidades do cliente, oferecendo um leque maior de soluções",
                 "Network com investidores de dívida elimina a frustração de iniciar um projeto com incertezas quanto a demanda por determinado papel",
                 "Equipe dedicada na construção de materiais e negociação com investidores"
             ]}
         />
-
-        <div className="efeito">
-            <div className="Graficopequeno2">
-                <div className="Coluna1"
-                     style={{width: '80px', height: '45px', opacity: 0.30, background: '#D9D9D9'}}></div>
-                <div className="Coluna2"
-                     style={{width: '80px', height: '113px', opacity: 0.30, background: '#EFEFEF'}}></div>
-                <div className="Coluna3"
-                     style={{width: '80px', height: '184px', opacity: 0.30, background: '#577FA4'}}></div>
-            </div>
-        </div>
     </TopicosAssessorMobileStyle>
 )
 

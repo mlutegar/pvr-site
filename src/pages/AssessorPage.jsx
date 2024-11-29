@@ -4,9 +4,9 @@ import TopicosAssessor from "../components/Sessoes/AssessorSessao/Desktop/Topico
 import Destaques from "../components/Sessoes/AssessorSessao/Desktop/Destaques/Destaques";
 import TituloAssessorMobile
     from "../components/Sessoes/AssessorSessao/Mobile/TituloAssessorMobile/TituloAssessorMobile";
-import TopicoAssessorMobile
-    from "../components/Sessoes/AssessorSessao/Mobile/TopicosAssessorMobile/TopicoServicoMobile/TopicoAssessorMobile";
 import DestaquesMobile from "../components/Sessoes/AssessorSessao/Mobile/DestaquesMobile/DestaquesMobile";
+import TopicosAssessorMobile
+    from "../components/Sessoes/AssessorSessao/Mobile/TopicosAssessorMobile/TopicosAssessorMobile";
 
 const AssessorPage = () => {
     return (
@@ -14,7 +14,7 @@ const AssessorPage = () => {
             <TituloAssessor/>
             <TituloAssessorMobile/>
             <TopicosAssessor/>
-            <TopicoAssessorMobile/>
+            <TopicosAssessorMobile/>
             <Destaques/>
             <DestaquesMobile/>
         </Base>

@@ -13,7 +13,7 @@ const TopicosAssessor = () => (
         />
 
         <TopicoAssessor
-            titulo="Título Exemplo"
+            titulo="Buy-side"
             descricao={[
                 "Equipe dedicada na busca e acesso aos targets que se adequem a estratégia do cliente, reduzindo o tempo de seleção",
                 "Maior compreensão da realidade do lado vendedor, uma vez que Middle Market é majoritariamente composto por empresas familiares",
@@ -22,7 +22,7 @@ const TopicosAssessor = () => (
         />
 
         <TopicoAssessor
-            titulo="Título Exemplo"
+            titulo="Emissão de dívida"
             descricao={[
                 "Possibilidade de maior entendimento das necessidades do cliente, oferecendo um leque maior de soluções",
                 "Network com investidores de dívida elimina a frustração de iniciar um projeto com incertezas quanto a demanda por determinado papel",

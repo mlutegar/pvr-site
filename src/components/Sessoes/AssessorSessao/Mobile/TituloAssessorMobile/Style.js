@@ -2,11 +2,8 @@ import styled from "styled-components"
 
 const TituloAssessorMobileStyle = styled.header`
     display: none;
-    padding: 0 10px;
     margin-top: 50px;
-    margin-bottom: 70px;
-
-    width: 100%;
+    
     text-align: center;
     flex-direction: column;
     

@@ -2,11 +2,9 @@ import styled from "styled-components"
 
 const TopicosAssessorMobileStyle = styled.header`
     display: none;
-    padding: 0 10px;
-
-    width: 100%;
     text-align: center;
     flex-direction: column;
+    padding-bottom: 20px;
 
     .efeito{
         display: flex;
