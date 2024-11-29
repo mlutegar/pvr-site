@@ -1,11 +1,15 @@
 import styled from "styled-components"
 
-const FormularioStyle = styled.header`
-    .div {
-        background: #44617c;
-        padding: 50px 150px;
-    }
+const FormularioMobileStyle = styled.header`
+    display: none;
+    background: #44617c;
+    flex-direction: column;
+    justify-content: center;
 
+    .div{
+        margin: 50px 20px;
+    }
+    
     .titulo {
         color: white;
         font-size: var(--titulo);
@@ -38,7 +42,7 @@ const FormularioStyle = styled.header`
 
     .dv-fo-co-parte1 {
         display: flex;
-        gap: 50px;
+        gap: 20px;
     }
 
     .dv-fo-co-parte2 {
@@ -56,7 +60,6 @@ const FormularioStyle = styled.header`
         justify-content: flex-end;
 
         & button {
-            width: 200px;
             border: none;
             padding-top: 18px;
             padding-bottom: 19px;
@@ -105,8 +108,24 @@ const FormularioStyle = styled.header`
     }
     
     @media (max-width: 768px) {
-        display: none;
+        display: flex;
+        
+        .dv-fo-co-parte1 {
+            flex-direction: column;
+        }
+        
+        .dv-fo-co-parte2 {
+            flex-direction: column;
+        }
+
+        .mensagem {
+            width: auto;
+        }
+
+        .dv-fo-co-item-button {
+            align-items: center;
+        }
     }
 `
 
-export {FormularioStyle}
+export {FormularioMobileStyle}

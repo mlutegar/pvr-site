@@ -1,8 +1,8 @@
-import {ContatoStyle} from "./Style";
+import {ContatoMobileStyle} from "./Style";
 import MapComponent from "../../../Itens/MapComponent/MapComponent";
 
-const Contato = () => (
-    <ContatoStyle>
+const ContatoMobile = () => (
+    <ContatoMobileStyle>
         <div className="dv-co-titulo" id={"contato"}>
             Contato
         </div>
@@ -47,7 +47,7 @@ const Contato = () => (
                 </div>
             </div>
         </div>
-    </ContatoStyle>
+    </ContatoMobileStyle>
 )
 
-export default Contato;
+export default ContatoMobile;

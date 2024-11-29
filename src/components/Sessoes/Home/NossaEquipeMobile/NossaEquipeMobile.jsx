@@ -1,31 +1,28 @@
-import {NossaEquipeStyle} from "./Style";
+import {NossaEquipeMobileStyle} from "./Style";
 import {useContext, useState} from "react";
 import {LangContext} from "../../../../context/LangContext";
 
-const NossaEquipe = () => {
+const NossaEquipeMobile = () => {
     const [isTrue, setIsTrue] = useState(false);
     const { lang, setLang } = useContext(LangContext);
 
     return (
-        <NossaEquipeStyle>
+        <NossaEquipeMobileStyle>
             <div className="div" id={"equipe"}>
                 <div className="titulo">
                     {lang === "PT" ? "Nossa Equipe" : "Our Team"}
                 </div>
                 <div className="conteudo">
                     <div className="dv-ne-co-card">
-                        <div className="foto">
-                            <img src="imagens/equipe01.png" onClick={() => setIsTrue(!isTrue)}/>
+                        <div className={"pessoa"}>
+                            <div className="foto">
+                                <img src="imagens/equipe01.png" onClick={() => setIsTrue(!isTrue)}/>
+                            </div>
+                            <div className="nome">
+                                Alexandre França <span>FRAGA</span>
+                            </div>
                         </div>
-                        <div className="nome">
-                            Alexandre França <span>Fraga</span>
-                        </div>
-                        <div className="botao">
-                            <button className={`btn-ne-co-cd ${isTrue ? "ativo" : ""}`}
-                                    onClick={() => setIsTrue(!isTrue)}>
-                                <img src="imagens/setaDropdown.png"/>
-                            </button>
-                        </div>
+
                         {isTrue &&
 
                             <div className="informacoes-equipe">
@@ -58,16 +55,13 @@ const NossaEquipe = () => {
                     </div>
 
                     <div className="dv-ne-co-card">
+                        <div className={"pessoa"}>
                         <div className="foto">
                             <img src="imagens/equipe02.png" onClick={() => setIsTrue(!isTrue)}/>
                         </div>
                         <div className="nome">
                             <span>PEDRO</span> Thomazoni
                         </div>
-                        <div className="botao">
-                            <button className={`btn-ne-co-cd ${isTrue ? "ativo" : ""}`} onClick={() => setIsTrue(!isTrue)}>
-                                <img src="imagens/setaDropdown.png"/>
-                            </button>
                         </div>
 
                         {isTrue &&
@@ -104,17 +98,15 @@ const NossaEquipe = () => {
                     </div>
 
                     <div className="dv-ne-co-card">
+                        <div className={"pessoa"}>
                         <div className="foto">
                             <img src="imagens/usuario.jpg" onClick={() => setIsTrue(!isTrue)}/>
                         </div>
                         <div className="nome">
-                            <span>RODRIGO</span> da Silva Perez
+                            <p>
+                                <span>RODRIGO</span> da Silva Perez
+                            </p>
                         </div>
-                        <div className="botao">
-                            <button className={`btn-ne-co-cd ${isTrue ? "ativo" : ""}`}
-                                    onClick={() => setIsTrue(!isTrue)}>
-                                <img src="imagens/setaDropdown.png"/>
-                            </button>
                         </div>
 
                         {isTrue &&
@@ -146,8 +138,8 @@ const NossaEquipe = () => {
                     </div>
                 </div>
             </div>
-        </NossaEquipeStyle>
+        </NossaEquipeMobileStyle>
     );
 }
 
-export default NossaEquipe;
+export default NossaEquipeMobile;

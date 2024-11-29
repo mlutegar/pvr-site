@@ -81,6 +81,10 @@ const MergesAquisitionsStyle = styled.header`
         }
     }
 
+    @media screen and (max-width: 768px) {
+        padding: 50px 0;
+    }
+
 `
 
 export {MergesAquisitionsStyle}

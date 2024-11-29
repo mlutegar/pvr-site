@@ -28,6 +28,18 @@ const AssessorHomeStyle = styled.header`
         animation-delay: 0.4s;
     }
 
+    .tituloMobile {
+        display: none;
+        color: #E8E8E8;
+        font-size: var(--titulo);
+        font-family: Montserrat, sans-serif;
+        font-weight: 700;
+        word-wrap: break-word;
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
+        animation-delay: 0.4s;
+    }
+
     .Assessor-corpo {
         color: white;
         font-size: var(--corpo);
@@ -54,18 +66,38 @@ const AssessorHomeStyle = styled.header`
         }
     }
     
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 768px) {
         padding: 50px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    
-    @media screen and (max-width: 321px) {
-        .Assessor-conteudo{
+        
+        .Assessor-titulo {
+            display: none;
+        }
+
+        .tituloMobile {
+            display: flex;
+            text-align: center;
+        }
+        
+        .Assessor-conteudo {
             width: auto;
+            padding: 10px 20px;
+        }
+        
+        .Assessor-corpo{
+            line-height: 15px;
+            text-align: center;
+        }
+        
+        .dv-assessor-botao{
+            padding: 0;
+            display: flex;
+            justify-content: center;
         }
     }
+    
 
     /* Keyframes para as animações */
     @keyframes fadeInBackground {

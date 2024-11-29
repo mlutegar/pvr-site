@@ -5,11 +5,16 @@ import NossosServicos from "../components/Sessoes/Home/NossosServicos/NossosServ
 import AssessorHome from "../components/Sessoes/Home/AssessorHome/AssessorHome";
 import TransacoesHome from "../components/Sessoes/Home/Transacoes/Transacoes";
 import NossaEquipe from "../components/Sessoes/Home/NossaEquipe/NossaEquipe";
-import Contato from "../components/Sessoes/Home/Contato/Contato";
+import ContatoMobile from "../components/Sessoes/Home/ContatoMobile/ContatoMobile";
 import Formulario from "../components/Sessoes/Home/Formulario/Formulario";
 import {useLocation} from "react-router-dom";
 import {useEffect} from "react";
 import NossaHistoriaMobile from "../components/Sessoes/Home/NossaHistoriaMobile/NossaHistoriaMobile";
+import NossosServicosMobile from "../components/Sessoes/Home/NossosServicosMobile/NossosServicosMobile";
+import TransacoesMobile from "../components/Sessoes/Home/TransacoesMobile/TransacoesMobile";
+import NossaEquipeMobile from "../components/Sessoes/Home/NossaEquipeMobile/NossaEquipeMobile";
+import Contato from "../components/Sessoes/Home/Contato/Contato";
+import FormularioMobile from "../components/Sessoes/Home/FormularioMobile/FormularioMobile";
 
 const Home = () => {
     const location = useLocation();
@@ -30,11 +35,16 @@ const Home = () => {
             <NossaHistoria/>
             <NossaHistoriaMobile/>
             <NossosServicos/>
+            <NossosServicosMobile/>
             <AssessorHome/>
             <TransacoesHome/>
+            <TransacoesMobile/>
             <NossaEquipe/>
+            <NossaEquipeMobile/>
             <Contato/>
+            <ContatoMobile/>
             <Formulario/>
+            <FormularioMobile/>
         </Base>
     )
 }

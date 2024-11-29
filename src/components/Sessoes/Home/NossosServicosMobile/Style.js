@@ -2,25 +2,26 @@ import styled from "styled-components";
 
 const NossosServicosMobileStyle = styled.header`
     background: #44617c;
-    padding: 50px 150px 0;
     opacity: 0;
     animation: fadeInUp 1s ease-out forwards;
+    display: none;
+    padding: 50px 0;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--titulo);
+    font-family: Montserrat, sans-serif;
 
     .dv-nossos-servicos-titulo {
-        top: 69px;
         color: white;
-        font-size: var(--titulo);
-        font-family: Montserrat, sans-serif;
         font-weight: 700;
         word-wrap: break-word;
         opacity: 0;
         animation: fadeIn 1s ease-out forwards;
         animation-delay: 0.2s;
-        padding-top: 30px;
     }
 
     .dv-nossos-servicos-conteudo {
-        padding-top: 4rem;
+        padding-top: 20px;
         display: flex;
         justify-content: center;
         gap: 100px;
@@ -28,52 +29,63 @@ const NossosServicosMobileStyle = styled.header`
         animation: fadeInUp 1s ease-out forwards;
         animation-delay: 0.4s;
         font-size: var(--corpo);
+    }
 
-        .cd-nossos-servicos {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 0.8s ease-out forwards;
-            animation-delay: 0.6s;
-        }
+    .cd-nossos-servicos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.8s ease-out forwards;
+        animation-delay: 0.6s;
+    }
 
-        .cd-logo-nossos-servicos {
-            height: 100px;
-            opacity: 0;
-            animation: zoomIn 1s ease-out forwards;
-            animation-delay: 0.8s;
-        }
+    .cd-logo-nossos-servicos {
+        height: 100px;
+        opacity: 0;
+        animation: zoomIn 1s ease-out forwards;
+        animation-delay: 0.8s;
+    }
 
-        .cd-titulo-nossos-servicos {
-            padding-bottom: 30px;
-            color: #FDFDFD;
-            font-family: Montserrat, sans-serif;
-            font-weight: 600;
-            word-wrap: break-word;
-            border-bottom: 2px solid #577fa4;
-            display: flex;
-            justify-content: center;
-            opacity: 0;
-            animation: fadeIn 1s ease-out forwards;
-            animation-delay: 1s;
+    .cd-titulo-nossos-servicos {
+        padding-bottom: 20px;
+        color: #FDFDFD;
+        font-family: Montserrat, sans-serif;
+        font-weight: 600;
+        word-wrap: break-word;
+        border-bottom: 2px solid #577fa4;
+        font-size: var(--subtitulo);
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
+        animation-delay: 1s;
+    }
+    
+    .dv-nossos-servicos-botoes{
+        display: flex;
+        gap: 20px;
+        padding: 20px 0;
+        
+        button {
+            padding: 5px 10px;
         }
+    }
 
-        .cd-conteudo-nossos-servicos {
-            text-align: center;
-            color: white;
-            font-size: 0.8em;
-            font-family: Montserrat, sans-serif;
-            font-weight: 400;
-            line-height: 35px;
-            word-wrap: break-word;
-            padding-top: 30px;
-            opacity: 0;
-            animation: fadeInText 1s ease-out forwards;
-            animation-delay: 1.2s;
-            width: 300px;
-        }
+    .cd-conteudo-nossos-servicos {
+        text-align: center;
+        color: white;
+        font-size: 0.8em;
+        font-family: Montserrat, sans-serif;
+        font-weight: 400;
+        line-height: 35px;
+        word-wrap: break-word;
+        padding-top: 15px;
+        opacity: 0;
+        animation: fadeInText 1s ease-out forwards;
+        animation-delay: 1.2s;
+        width: 300px;
     }
     
     .dv-nossos-servicos-botao {
@@ -109,46 +121,23 @@ const NossosServicosMobileStyle = styled.header`
         animation-delay: 1.4s;
         transform: scaleX(1);
     }
-    
-    @media screen and (max-width: 1600px) {
-        .dv-nossos-servicos {
-            padding: 50px 100px 0;
-        }
-        
-        .cd-conteudo-nossos-servicos {
-            line-height: 30px;
-        }
-        
-        .Graficopequeno1 {
-            gap: 20px;
-        }
-        
-        .Graficopequeno2 {
-            gap: 20px;
-        }
-        
-    }
-    
-    @media screen and (max-width: 1440px) {
-        .cd-nossos-servicos {
-            width: 300px;
-        }
-        
-        .dv-nossos-servicos-conteudo {
-            margin-bottom: 40px;
-        }
-    }
-    
-    @media screen and (max-width: 1024px) {
-        padding: 50px 0;
-        display: flex;
+
+
+    .dv-nossos-servicos-conteudo{
         flex-direction: column;
         align-items: center;
-        
-        .dv-nossos-servicos-conteudo{
-            flex-direction: column;
-            align-items: center;
-        }
+    }
+
+    .Graficopequeno1, .Graficopequeno2 {
+        display: none;
+    }
+
+    .Coluna1, .Coluna2, .Coluna3{
+        width: 50px;
+    }
+
+    @media screen and (max-width: 768px) {
+        display: flex;
     }
     
     /* Keyframes para animações */

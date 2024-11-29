@@ -1,14 +1,14 @@
 import {useState, useEffect, useContext} from 'react';
-import {TransacoesStyle} from "./Style";
+import {TransacoesMobileStyle} from "./Style";
 import transacoesData from "../../../../data/transacoesdata.json";
 import TransacaoCard from "../../../Itens/TransacaoCard/TransacaoCard";
 import Botao from "../../../Itens/Botao/Botao";
 import {LangContext} from "../../../../context/LangContext";
 
-const Transacoes = () => {
+const TransacoesMobile = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const [visibleCards, setVisibleCards] = useState(3);
+    const [visibleCards, setVisibleCards] = useState(1);
 
     const [isAnimating, setIsAnimating] = useState(false);
     const [transacoes, setTransacoes] = useState(transacoesData);
@@ -22,7 +22,6 @@ const Transacoes = () => {
                     key={index}
                     transacao={transacao}
                     numero={index}
-                    style={index === 1 || index === 3 ? {} : {transform: 'scale(0.85)', opacity: 0.9}}
                 />
             );
         });
@@ -47,59 +46,43 @@ const Transacoes = () => {
     };
 
     useEffect(() => {
-        const mediaQuery = window.matchMedia("(max-width: 768px)");
-
-        const handleScreenChange = (e) => {
-            setVisibleCards(e.matches ? 1 : 3);
-        };
-
-        // Adiciona o listener
-        mediaQuery.addEventListener("change", handleScreenChange);
-
-        // Cleanup no unmount
-        return () => mediaQuery.removeEventListener("change", handleScreenChange);
-    }, []);
-
-
-    useEffect(() => {
         renderTransacoes();
     }, [currentIndex]);
 
     return (
-        <TransacoesStyle>
-            <div className="header">
-                <div className="titulo">
-                    <div className="titulo-principal">
-                        {lang === "PT" ? "Transações" : "Transactions"}
-                    </div>
-                    <div className="subtitulo">
-                        {lang === "PT" ? "Nossas últimas transações" : "Our latest transactions"}
-                    </div>
+        <TransacoesMobileStyle>
+            <div className="titulo">
+                <div className="titulo-principal">
+                    {lang === "PT" ? "Transações" : "Transactions"}
                 </div>
-                <div>
-                    <Botao
-                        href={"/transacoes"}
-                        modo={2}
-                        texto={"Ver todas"}
-                    />
+                <div className="subtitulo">
+                    {lang === "PT" ? "Nossas últimas transações" : "Our latest transactions"}
                 </div>
             </div>
 
             <div className="conteudo">
-                <button className="botao seta1" onClick={handlePrevious}>
-                    <img src="imagens/seta2.png" alt="Transação anterior"/>
-                </button>
+                {/*<button className="botao seta1" onClick={handlePrevious}>*/}
+                {/*    <img src="imagens/seta2.png" alt="Transação anterior"/>*/}
+                {/*</button>*/}
 
                 <div className="cards">
                     {renderTransacoes()}
                 </div>
 
-                <button className="botao seta2" onClick={handleNext}>
-                    <img src="imagens/seta2.png" alt="Próxima transação"/>
-                </button>
+                {/*<button className="botao seta2" onClick={handleNext}>*/}
+                {/*    <img src="imagens/seta2.png" alt="Próxima transação"/>*/}
+                {/*</button>*/}
             </div>
-        </TransacoesStyle>
+
+            <div className={"divbotao"}>
+                <Botao
+                    href={"/transacoes"}
+                    modo={2}
+                    texto={"Veja todas"}
+                />
+            </div>
+        </TransacoesMobileStyle>
     );
 };
 
-export default Transacoes;
+export default TransacoesMobile;

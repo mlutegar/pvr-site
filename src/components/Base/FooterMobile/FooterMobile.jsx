@@ -1,8 +1,8 @@
-import { FooterStyle } from "./Style";
+import { FooterMobileStyle } from "./Style";
 import {Link} from "react-router-dom";
 
-const Footer = () => (
-    <FooterStyle>
+const FooterMobile = () => (
+    <FooterMobileStyle>
         <div className="conteudo">
             <div className="nav">
                 <Link to="/" className="NavbarItem" id="navQuemSomos">Home</Link>
@@ -22,7 +22,7 @@ const Footer = () => (
                 Politicas de Privacidade | Termos de Uso
             </div>
         </div>
-    </FooterStyle>
+    </FooterMobileStyle>
 )
 
-export default Footer;
+export default FooterMobile;

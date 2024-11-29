@@ -1,9 +1,12 @@
 import styled from "styled-components";
 
-const ContatoStyle = styled.header`
+const ContatoMobileStyle = styled.header`
     background: #f5f5f5;
-    padding: 50px 150px;
     animation: fadeIn 1s ease-in-out;
+    padding: 50px 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
 
     .dv-co-titulo {
         color: #44617c;
@@ -15,6 +18,7 @@ const ContatoStyle = styled.header`
     }
 
     .conteudo {
+        width: 90%;
         display: flex;
         gap: 50px;
         padding-top: 50px;
@@ -22,15 +26,14 @@ const ContatoStyle = styled.header`
     }
 
     .dv-co-co-mapa {
-        width: 50%;
         display: flex;
         justify-content: flex-end;
         animation: zoomIn 1s ease-in-out;
     }
 
     .Mapa-contato {
-        width: 489px;
         transition: transform 0.3s;
+        width: 100%;
     }
 
     .dv-co-co-info {
@@ -65,7 +68,10 @@ const ContatoStyle = styled.header`
     }
     
     @media screen and (max-width: 768px) {
-        display: none;
+        display: flex;
+        .conteudo {
+            flex-direction: column;
+        }
     }
 
     @keyframes fadeIn {
@@ -122,4 +128,4 @@ const ContatoStyle = styled.header`
     }
 `;
 
-export { ContatoStyle };
+export { ContatoMobileStyle };

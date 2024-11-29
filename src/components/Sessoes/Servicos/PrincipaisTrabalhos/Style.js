@@ -63,8 +63,8 @@ const PrincipaisTrabalhosStyle = styled.header`
         }
     }
 
-    @media screen and (max-width: 1440px) {
-
+    @media screen and (max-width: 768px) {
+        padding: 50px 0;
     }
     
 `

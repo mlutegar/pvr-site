@@ -56,17 +56,17 @@ h1,h2,h3,h4,h5,h6{
   :root {
     --titulo: 38.4px;
     --subtitulo: 19.2px;
-    --corpo: 16px;
+    --corpo: 12px;
     --botao: 19.2px;
   }
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 768px){
   :root {
-    --titulo: 48px;
-    --subtitulo: 24px;
-    --corpo: 20px;
-    --botao: 24px;
+    --titulo: 24px;
+    --subtitulo: 18px;
+    --corpo: 12px;
+    --botao: 12px;
   }
 }
 

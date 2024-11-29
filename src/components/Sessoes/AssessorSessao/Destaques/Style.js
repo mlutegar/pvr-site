@@ -46,6 +46,10 @@ const DestaquesStyle = styled.header`
         gap: 29px;
         display: inline-flex;
     }
+
+    @media screen and (max-width: 768px) {
+        padding: 50px 0;
+    }
 `
 
 export {DestaquesStyle}

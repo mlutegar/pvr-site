@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
-const NossaEquipeStyle = styled.header`
-    padding: 50px 150px;
+const NossaEquipeMobileStyle = styled.header`
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 10px;
+    width: auto;
 
     .div {
         background: white;
@@ -9,6 +13,7 @@ const NossaEquipeStyle = styled.header`
     }
 
     .titulo {
+        text-align: center;
         color: #44617c;
         font-size: var(--titulo);
         font-family: Montserrat, sans-serif;
@@ -19,28 +24,26 @@ const NossaEquipeStyle = styled.header`
 
     .conteudo {
         display: flex;
-        gap: 10rem;
+        gap: 20px;
         padding-top: 50px;
         justify-content: center;
         animation: fadeIn 1.5s ease-in-out;
+        flex-direction: column;
     }
 
     card {
         display: flex;
-        flex-direction: column;
         gap: 20px;
         align-items: center;
         width: 450px;
         animation: zoomIn 1s ease-in-out;
+        flex-direction: column;
     }
 
     .foto {
-        height: 339px;
-        cursor: pointer;
-
         & img {
-            width: 326px;
-            height: 339px;
+            width: 200px;
+            height: 200px;
             transition: transform 0.3s;
         }
 
@@ -50,15 +53,29 @@ const NossaEquipeStyle = styled.header`
     }
 
     .nome {
+        display: flex
+    ;
         color: #44617c;
         font-size: var(--corpo);
         font-family: Montserrat, sans-serif;
         font-weight: 400;
-        word-wrap: break-word;
+        text-align: left;
+        padding-left: 10px;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: flex-start;
 
-        & span {
-            font-weight: 700;
+        p {
+
+            word-wrap: break-word;
+            align-items: center;
+            padding: 10px;
         }
+    }
+
+    span {
+        font-weight: 700;
     }
 
     .botao {
@@ -122,88 +139,28 @@ const NossaEquipeStyle = styled.header`
         }
     }
 
+    .pessoa {
+        display: flex;
+        flex-direction: row;
+    }
+
+
     .ul-informacoes {
-        height: 750px;
-        margin-bottom: 10px;
         animation: fadeIn 2s ease-in-out;
 
         & li {
             color: #000;
-            font-family: Montserrat;
             font-size: var(--corpo);
             font-style: normal;
             font-weight: 400;
-            line-height: 35px;
             word-wrap: break-word;
-            padding-top: 20px;
             animation: slideIn 1s ease-in-out;
-        }
-    }
-
-    @media screen and (max-width: 1600px) {
-        .conteudo {
-            gap: 5rem;
-        }
-
-        card {
-            width: 400px;
-        }
-
-        .foto {
-            height: 300px;
-
-            & img {
-                width: 300px;
-                height: 300px;
-            }
-        }
-
-        .nome {
-            font-size: var(--corpo);
-        }
-
-        .btn-ne-co-cd {
-            padding: 15px 80px;
-            font-size: var(--corpo);
-        }
-
-        .ul-informacoes {
-            height: 800px;
-        }
-
-        .redes {
-            padding-top: 10px;
-        }
-    }
-
-    @media screen and (max-width: 1440px) {
-        card {
-            width: 350px;
-        }
-
-        .foto {
-            height: 250px;
-
-            & img {
-                width: 250px;
-                height: 250px;
-            }
-        }
-
-        .btn-ne-co-cd {
-            padding: 12px 70px;
-        }
-
-        .ul-informacoes {
-            height: 920px;
-        }
-
-        .redes {
+            padding: 20px 50px;
         }
     }
 
     @media screen and (max-width: 768px) {
-        display: none;
+        display: flex;
     }
 
     /* Keyframes for animations */
@@ -250,4 +207,4 @@ const NossaEquipeStyle = styled.header`
     }
 `;
 
-export {NossaEquipeStyle};
+export {NossaEquipeMobileStyle};

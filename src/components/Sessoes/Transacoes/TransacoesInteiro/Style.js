@@ -129,6 +129,10 @@ const TransacoesInteiroStyle = styled.header`
             gap: 60px;
         }
     }
+
+    @media screen and (max-width: 768px) {
+        padding: 50px 0;
+    }
 `
 
 export {TransacoesInteiroStyle}

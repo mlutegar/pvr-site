@@ -1,10 +1,10 @@
 import emailjs from "emailjs-com";
-import { FormularioStyle } from "./Style";
+import { FormularioMobileStyle } from "./Style";
 import Botao from "../../../Itens/Botao/Botao";
 import {useContext} from "react";
 import {LangContext} from "../../../../context/LangContext";
 
-const Formulario = () => {
+const FormularioMobile = () => {
     const { lang, setLang } = useContext(LangContext);
 
     const enviarEmail = (e) => {
@@ -46,7 +46,7 @@ const Formulario = () => {
     };
 
     return (
-        <FormularioStyle>
+        <FormularioMobileStyle>
             <div className="div">
                 <div className="titulo">
                     <div className="titulo-principal">Formulário</div>
@@ -90,8 +90,8 @@ const Formulario = () => {
                     </form>
                 </div>
             </div>
-        </FormularioStyle>
+        </FormularioMobileStyle>
     );
 };
 
-export default Formulario;
+export default FormularioMobile;

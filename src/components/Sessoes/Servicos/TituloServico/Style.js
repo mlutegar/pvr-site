@@ -12,8 +12,9 @@ const TituloServicoStyle = styled.header`
         font-weight: 600;
         line-height: 35px; /* 87.5% */
     }
-    
-    @media screen and (max-width: 1440px) {
+
+    @media screen and (max-width: 768px) {
+        padding: 50px 0;
     }
 `
 

@@ -103,6 +103,43 @@ const TransacaoCardStyle = styled.header`
             height: 340px;
         }
     }
+    
+    @media screen and (max-width: 1024px) {
+        .Card {
+            width: 200px;
+            height: 200px;
+        }
+
+        .Imagemempresa2,
+        .Imagemempresa1 {
+            width: 100px;
+        }
+
+        .Br {
+            height: 40px;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .Card {
+            width: 340px;
+            height: 340px;
+        }
+
+        .Imagemempresa2,
+        .Imagemempresa1 {
+            width: 120px;
+        }
+
+        .Br {
+            height: 50px;
+        }
+        
+        .Card:hover {
+            transform: scale(1);
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
 
     /* Keyframes for Animations */
     @keyframes fadeIn {

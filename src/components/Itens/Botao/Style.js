@@ -25,6 +25,13 @@ const BotaoStyle = styled.header`
         transform: scale(1.1);
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     }
+
+    @media screen and (max-width: 768px) {
+        .btn{
+            padding: 20px 39px;
+            border-radius: 6px;
+        }
+    }
 `;
 
 export { BotaoStyle };

@@ -91,7 +91,7 @@ const NossaHistoriaStyle = styled.header`
         }
     }
     
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 768px) {
         display: none;
     }
 

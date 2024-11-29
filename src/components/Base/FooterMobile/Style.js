@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
-const FooterStyle = styled.header`
-    padding: 50px 150px;
+const FooterMobileStyle = styled.header`
+    display: none;
+    padding: 20px 20px;
+    flex-direction: column;
 
     .dv-footer {
         background: white;
@@ -10,7 +12,10 @@ const FooterStyle = styled.header`
     }
 
     .conteudo {
+        width: 100%;
         display: flex;
+        // alinhar por coluna
+        flex-direction: row;
         justify-content: space-between;
         border-top: 4px solid #577FA4;
         padding-top: 20px;
@@ -19,7 +24,8 @@ const FooterStyle = styled.header`
 
     .nav {
         display: flex;
-        gap: 50px;
+        gap: 20px;
+        flex-direction: column;
 
         & a {
             color: #44617c;
@@ -43,9 +49,15 @@ const FooterStyle = styled.header`
 
     .logo {
         animation: zoomIn 1.5s ease-in-out;
+        
+        img{
+            width: 50px;
+            height: auto;
+        }
     }
 
     .dv-fr-copyright {
+        padding-top: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -53,7 +65,7 @@ const FooterStyle = styled.header`
     }
     
     @media screen and (max-width: 768px) {
-        display: none;
+        display: flex;
     }
 
     @keyframes fadeIn {
@@ -99,4 +111,4 @@ const FooterStyle = styled.header`
     }
 `;
 
-export { FooterStyle };
+export { FooterMobileStyle };

@@ -138,35 +138,13 @@ const NossosServicosStyle = styled.header`
     }
     
     @media screen and (max-width: 1024px) {
-        padding: 50px 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        .dv-nossos-servicos-conteudo{
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-
-    @media screen and (max-width: 769px) {
-        .Graficopequeno1, .Graficopequeno2 {
-            gap: 5px;
-        }
-
-        .Coluna1, .Coluna2, .Coluna3{
-            width: 50px;
+        .dv-nossos-servicos-conteudo {
+            gap: 0;
         }
     }
     
-    @media screen and (max-width: 426px) {
-        .Graficopequeno1, .Graficopequeno2 {
-            display: none;
-        }
-
-        .Coluna1, .Coluna2, .Coluna3{
-            width: 50px;
-        }
+    @media screen and (max-width: 768px) {
+        display: none;
     }
     
     /* Keyframes para animações */
