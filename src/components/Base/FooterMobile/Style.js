@@ -17,7 +17,7 @@ const FooterMobileStyle = styled.header`
         // alinhar por coluna
         flex-direction: row;
         justify-content: space-between;
-        border-top: 4px solid #577FA4;
+        border-top: 2px solid #577FA4;
         padding-top: 20px;
         animation: slideUp 1s ease-in-out;
     }
@@ -28,12 +28,12 @@ const FooterMobileStyle = styled.header`
         flex-direction: column;
 
         & a {
-            color: #44617c;
+            color: black;
             font-size: var(--corpo);
             font-family: Montserrat, sans-serif;
             font-weight: 400;
             word-wrap: break-word;
-            text-decoration: none;
+            
             transition: color 0.3s, transform 0.3s;
 
             &:hover {
@@ -57,7 +57,7 @@ const FooterMobileStyle = styled.header`
     }
 
     .dv-fr-copyright {
-        padding-top: 20px;
+        padding-top: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;

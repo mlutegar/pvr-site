@@ -19,7 +19,7 @@ const HeaderMobile = () => {
 
     return (
         <HeaderMobileStyle>
-            <div className={"mobile"}>
+            <div className={"Mobile"}>
                 <div className="left">
                     <Link to="/">
                         <img

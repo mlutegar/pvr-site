@@ -12,7 +12,8 @@ const HeaderMobileStyle = styled.header`
         padding-bottom: 300px;
     }
 
-    .mobile {
+    .Mobile {
+        display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px 35px;
