@@ -8,9 +8,9 @@ const PrincipaisTrabalhosMobileStyle = styled.header`
     text-align: center;
 
     .titulo {
-        margin-top: 50px;
+        margin-top: 40px;
         color: #44617C;
-        font-size: var(--titulo);
+        font-size: var(--subtitulo);
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -19,7 +19,7 @@ const PrincipaisTrabalhosMobileStyle = styled.header`
     .conteudo {
         display: flex;
         flex-direction: column;
-        margin-top: 10px;
+        margin-top: 20px;
 
         color: #000;
         font-size: var(--corpo);
@@ -28,12 +28,19 @@ const PrincipaisTrabalhosMobileStyle = styled.header`
     }
 
     .parte1 {
+        margin: 0px 10px;
         border-bottom: 2px solid #44617C;
         padding-bottom: 10px;
     }
 
+    .parte2{
+        margin-top: 10px;
+    }
+
     ul {
         padding: 0 40px;
+    //    remover o ponto da lista
+        list-style-type: none;
     }
 
     li {
@@ -41,7 +48,7 @@ const PrincipaisTrabalhosMobileStyle = styled.header`
     }
 
     .imagem {
-        margin-top: 20px;
+        margin-top: 50px;
         display: flex;
         justify-content: center;
         /* width: 100%; */
@@ -49,7 +56,7 @@ const PrincipaisTrabalhosMobileStyle = styled.header`
     }
 
     img {
-        width: 100%;
+        width: 80%;
         flex-shrink: 0;
     }
 

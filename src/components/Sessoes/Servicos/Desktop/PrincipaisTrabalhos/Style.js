@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const PrincipaisTrabalhosStyle = styled.header`
-    padding: 50px 150px;
+    padding: 50px 100px;
     
     .titulo {
         margin-top: 50px;

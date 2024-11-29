@@ -23,7 +23,7 @@ const NossaHistoriaMobileStyle = styled.header`
         animation-delay: 0.4s; /* Aparece depois do texto */
     }
     
-    .conteudo-nossa-historia {
+    .historia {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -32,7 +32,7 @@ const NossaHistoriaMobileStyle = styled.header`
         animation-delay: 0.2s; /* Aparece depois da seção */
     }
 
-    .titulo-nossa-historia {
+    .titulo {
         margin-bottom: 20px;
         display: flex;
         flex-direction: column;
@@ -50,7 +50,7 @@ const NossaHistoriaMobileStyle = styled.header`
         animation-delay: 0.2s; /* Começa após a entrada da seção */
     }
 
-    .subtitulo-nossa-historia {
+    .subtitulo {
         color: rgb(87, 127, 164);
         font-size: var(--subtitulo);
         font-family: Montserrat, sans-serif;

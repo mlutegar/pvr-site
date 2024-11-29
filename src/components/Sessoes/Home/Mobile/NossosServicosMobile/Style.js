@@ -11,11 +11,26 @@ const NossosServicosMobileStyle = styled.header`
     font-size: var(--titulo);
     font-family: Montserrat, sans-serif;
     
+    .botaoSeta{
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+        
+        img{
+            width: 50%;
+        }
+    }
+    
+    .botaoSeta:active{
+        transform: scale(0.9);
+    }
+    
     .dv-paginacao{
         margin-bottom: 20px;
     }
 
-    .dv-nossos-servicos-titulo {
+    .titulo {
         color: white;
         font-weight: 700;
         word-wrap: break-word;
@@ -24,7 +39,7 @@ const NossosServicosMobileStyle = styled.header`
         animation-delay: 0.2s;
     }
 
-    .dv-nossos-servicos-conteudo {
+    .conteudo {
         padding-top: 20px;
         display: flex;
         justify-content: center;
@@ -33,6 +48,7 @@ const NossosServicosMobileStyle = styled.header`
         animation: fadeInUp 1s ease-out forwards;
         animation-delay: 0.4s;
         font-size: var(--corpo);
+        width: 70%;
     }
 
     .cd-nossos-servicos {
@@ -50,6 +66,10 @@ const NossosServicosMobileStyle = styled.header`
         opacity: 0;
         animation: zoomIn 1s ease-out forwards;
         animation-delay: 0.8s;
+        
+        img{
+            height: 80%;
+        }
     }
 
     .cd-titulo-nossos-servicos {
@@ -65,6 +85,7 @@ const NossosServicosMobileStyle = styled.header`
         opacity: 0;
         animation: fadeIn 1s ease-out forwards;
         animation-delay: 1s;
+        text-align: center;
     }
     
     .dv-nossos-servicos-botoes{
@@ -77,7 +98,7 @@ const NossosServicosMobileStyle = styled.header`
         justify-content: space-between;
         
         button {
-            margin: 0 20px;
+            margin: 0 5px;
             padding: 5px 10px;
         }
     }
@@ -94,7 +115,6 @@ const NossosServicosMobileStyle = styled.header`
         opacity: 0;
         animation: fadeInText 1s ease-out forwards;
         animation-delay: 1.2s;
-        width: 300px;
     }
     
     ul{
@@ -137,7 +157,7 @@ const NossosServicosMobileStyle = styled.header`
     }
 
 
-    .dv-nossos-servicos-conteudo{
+    .conteudo{
         flex-direction: column;
         align-items: center;
     }

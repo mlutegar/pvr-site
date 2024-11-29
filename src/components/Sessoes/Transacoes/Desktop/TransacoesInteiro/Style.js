@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const TransacoesInteiroStyle = styled.header`
     background-color: #44617c;
-    padding: 50px 150px;
+    padding: 50px 100px;
 
     .titulo-principal {
         color: #FFF;
@@ -11,6 +11,34 @@ const TransacoesInteiroStyle = styled.header`
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+    }
+
+    .paginacao {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .dv-paginacao{
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .botoes{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            width: 10px;
+            height: 10px;
+            padding: 10px;
+            margin: 0 40px;
+        }
     }
     
     .header {
@@ -60,6 +88,17 @@ const TransacoesInteiroStyle = styled.header`
             }
         }
     }
+
+    span {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: var(--corpo);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+    }
     
     .transacoes {
         display: flex;
@@ -77,34 +116,6 @@ const TransacoesInteiroStyle = styled.header`
         .linha2 {
             display: flex;
             justify-content: space-between;
-        }
-    }
-    
-    .paginacao {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        margin-top: 50px;
-        
-        button {
-            border-radius: 5px;
-            font-family: Montserrat;
-            font-size: var(--botao);
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            padding: 10px 20px;
-        }
-        
-        span {
-            color: #FFF;
-            font-family: Montserrat;
-            font-size: var(--corpo);
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            display: flex;
-            align-items: center;
         }
     }
     

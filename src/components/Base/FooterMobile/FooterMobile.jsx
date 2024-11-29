@@ -5,10 +5,10 @@ const FooterMobile = () => (
     <FooterMobileStyle>
         <div className="conteudo">
             <div className="nav">
-                <Link to="/" className="NavbarItem" id="navQuemSomos">Home</Link>
-                <Link to="/servicos" className="NavbarItem" id="navServicos">Serviços</Link>
-                <Link to="/transacoes" className="NavbarItem" id="navEquipe">Transações</Link>
-                <Link to="/#equipe" className="NavbarItem" id="navContato">Quem somos</Link>
+                <Link to="/" className="NavbarItem" id="navQuemSomos" onClick={() => window.scrollTo(0, 0)} >Home</Link>
+                <Link to="/servicos" className="NavbarItem" id="navServicos" onClick={() => window.scrollTo(0, 0)} >Serviços</Link>
+                <Link to="/transacoes" className="NavbarItem" id="navEquipe" onClick={() => window.scrollTo(0, 0)} >Transações</Link>
+                <Link to="/assessor" className="NavbarItem" id="navContato" onClick={() => window.scrollTo(0, 0)} >Quem somos</Link>
             </div>
             <div className="logo">
                 <img className="Logo Logo-posicao" src="imagens/pvr.png"/>

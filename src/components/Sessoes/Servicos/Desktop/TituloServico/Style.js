@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const TituloServicoStyle = styled.header`
-    padding: 0 150px;
+    padding: 0 100px;
     margin-top: 50px;
     
     .titulo {

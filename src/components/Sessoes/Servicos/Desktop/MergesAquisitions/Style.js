@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const MergesAquisitionsStyle = styled.header`
-    padding: 100px 150px 0;
+    padding: 100px 100px 0;
     display: flex;
 
     .imagem {

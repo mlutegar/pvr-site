@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const NossaEquipeStyle = styled.header`
-    padding: 50px 150px;
+    padding: 50px 100px;
 
     .div {
         background: white;
@@ -55,6 +55,7 @@ const NossaEquipeStyle = styled.header`
         font-family: Montserrat, sans-serif;
         font-weight: 400;
         word-wrap: break-word;
+        margin-top: 25px;
 
         & span {
             font-weight: 700;
@@ -62,6 +63,7 @@ const NossaEquipeStyle = styled.header`
     }
 
     .botao {
+        margin-top: 25px;
         display: flex;
         justify-content: center;
     }
@@ -123,7 +125,7 @@ const NossaEquipeStyle = styled.header`
     }
 
     .ul-informacoes {
-        height: 750px;
+        max-width: 280px;
         margin-bottom: 10px;
         animation: fadeIn 2s ease-in-out;
 
@@ -158,17 +160,9 @@ const NossaEquipeStyle = styled.header`
             }
         }
 
-        .nome {
-            font-size: var(--corpo);
-        }
-
         .btn-ne-co-cd {
             padding: 15px 80px;
             font-size: var(--corpo);
-        }
-
-        .ul-informacoes {
-            height: 800px;
         }
 
         .redes {
@@ -192,13 +186,6 @@ const NossaEquipeStyle = styled.header`
 
         .btn-ne-co-cd {
             padding: 12px 70px;
-        }
-
-        .ul-informacoes {
-            height: 920px;
-        }
-
-        .redes {
         }
     }
 

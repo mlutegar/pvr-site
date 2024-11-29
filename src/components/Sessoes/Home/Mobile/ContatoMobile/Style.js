@@ -50,17 +50,18 @@ const ContatoMobileStyle = styled.header`
     }
 
     .dv-co-co-in-icone {
-        height: 50px;
         transition: transform 0.3s;
+        display: flex;
+        align-items: center;
 
-        &:hover {
-            transform: rotate(15deg);
+        img{
+            width: 70%;
         }
     }
 
     .dv-co-co-in-texto {
-        color: #44617c;
-        font-size: var(--corpo);
+        color: black;
+        font-size: var(--subtitulo);
         font-family: Montserrat, sans-serif;
         font-weight: 400;
         word-wrap: break-word;

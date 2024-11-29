@@ -8,13 +8,13 @@ const NossosServicos = () => {
 
     return (
         <NossosServicosStyle>
-            <div className="dv-nossos-servicos-titulo">
+            <div className="titulo">
                 {lang === "PT" ? "Nossos Serviços" : "Our Services"}
             </div>
-            <div className="dv-nossos-servicos-conteudo">
+            <div className="conteudo">
                 <div className="cd-nossos-servicos">
                     <div className="cd-logo-nossos-servicos">
-                        <img className="Icone" src="imagens/icone1.png" alt="Ícone 1"/>
+                        <img className="Icone" src="imagens/icone1.svg" alt="Ícone 1"/>
                     </div>
                     <div className="cd-titulo-nossos-servicos">
                         {lang === "PT" ? "Mergers & Aquisições" : "Mergers & Aquisitions"}
@@ -27,7 +27,7 @@ const NossosServicos = () => {
 
                 <div className="cd-nossos-servicos">
                     <div className="cd-logo-nossos-servicos">
-                        <img className="Icone" src="imagens/icone2.png" alt="Ícone 2"/>
+                        <img className="Icone" src="imagens/icone2.svg" alt="Ícone 2"/>
                     </div>
                     <div className="cd-titulo-nossos-servicos">
                         {lang === "PT" ? "Consultoria Especializada" : "Specialized Consulting"}
@@ -40,7 +40,7 @@ const NossosServicos = () => {
 
                 <div className="cd-nossos-servicos">
                     <div className="cd-logo-nossos-servicos">
-                        <img className="Icone" src="imagens/icone3.png" alt="Ícone 3"/>
+                        <img className="Icone" src="imagens/icone3.svg" alt="Ícone 3"/>
                     </div>
                     <div className="cd-titulo-nossos-servicos">
                         {lang === "PT" ? "Dívida Estruturada" : "Structured Debt"}

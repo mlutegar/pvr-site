@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 const NossosServicosStyle = styled.header`
     background: #44617c;
-    padding: 50px 150px 0;
+    padding: 0 100px 0;
     opacity: 0;
     animation: fadeInUp 1s ease-out forwards;
 
-    .dv-nossos-servicos-titulo {
+    .titulo {
         top: 69px;
         color: white;
         font-size: var(--titulo);
@@ -16,11 +16,11 @@ const NossosServicosStyle = styled.header`
         opacity: 0;
         animation: fadeIn 1s ease-out forwards;
         animation-delay: 0.2s;
-        padding-top: 30px;
+        padding-top: 50px;
     }
 
-    .dv-nossos-servicos-conteudo {
-        padding-top: 4rem;
+    .conteudo {
+        padding-top: 30px;
         display: flex;
         justify-content: center;
         gap: 100px;
@@ -29,53 +29,58 @@ const NossosServicosStyle = styled.header`
         animation-delay: 0.4s;
         font-size: var(--corpo);
 
-        .cd-nossos-servicos {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 0.8s ease-out forwards;
-            animation-delay: 0.6s;
-        }
+    }
 
-        .cd-logo-nossos-servicos {
-            height: 100px;
-            opacity: 0;
-            animation: zoomIn 1s ease-out forwards;
-            animation-delay: 0.8s;
-        }
-
-        .cd-titulo-nossos-servicos {
-            padding-bottom: 30px;
-            color: #FDFDFD;
-            font-family: Montserrat, sans-serif;
-            font-weight: 600;
-            word-wrap: break-word;
-            border-bottom: 2px solid #577fa4;
-            display: flex;
-            justify-content: center;
-            opacity: 0;
-            animation: fadeIn 1s ease-out forwards;
-            animation-delay: 1s;
-        }
-
-        .cd-conteudo-nossos-servicos {
-            text-align: center;
-            color: white;
-            font-size: 0.8em;
-            font-family: Montserrat, sans-serif;
-            font-weight: 400;
-            line-height: 35px;
-            word-wrap: break-word;
-            padding-top: 30px;
-            opacity: 0;
-            animation: fadeInText 1s ease-out forwards;
-            animation-delay: 1.2s;
-            width: 300px;
+    .cd-nossos-servicos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.8s ease-out forwards;
+        animation-delay: 0.6s;
+        
+        img{
+            height: 70%;
         }
     }
-    
+
+    .cd-logo-nossos-servicos {
+        height: 70px;
+        opacity: 0;
+        animation: zoomIn 1s ease-out forwards;
+        animation-delay: 0.8s;
+    }
+
+    .cd-titulo-nossos-servicos {
+        padding-bottom: 30px;
+        color: #FDFDFD;
+        font-family: Montserrat, sans-serif;
+        font-weight: 600;
+        word-wrap: break-word;
+        border-bottom: 2px solid #577fa4;
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
+        animation-delay: 1s;
+    }
+
+    .cd-conteudo-nossos-servicos {
+        text-align: center;
+        color: white;
+        font-size: 0.8em;
+        font-family: Montserrat, sans-serif;
+        font-weight: 400;
+        line-height: 35px;
+        word-wrap: break-word;
+        padding-top: 30px;
+        opacity: 0;
+        animation: fadeInText 1s ease-out forwards;
+        animation-delay: 1.2s;
+        width: 300px;
+    }
+
     .dv-nossos-servicos-botao {
         display: flex;
         flex-direction: row;
@@ -103,50 +108,50 @@ const NossosServicosStyle = styled.header`
         animation-delay: 1.4s;
         transform: scaleX(1);
     }
-    
-    .Coluna1, .Coluna2, .Coluna3{
-        width: 80px;   
+
+    .Coluna1, .Coluna2, .Coluna3 {
+        width: 80px;
     }
-    
+
     @media screen and (max-width: 1600px) {
         .dv-nossos-servicos {
             padding: 50px 100px 0;
         }
-        
+
         .cd-conteudo-nossos-servicos {
             line-height: 30px;
         }
-        
+
         .Graficopequeno1 {
             gap: 20px;
         }
-        
+
         .Graficopequeno2 {
             gap: 20px;
         }
-        
+
     }
-    
+
     @media screen and (max-width: 1440px) {
         .cd-nossos-servicos {
             width: 300px;
         }
-        
-        .dv-nossos-servicos-conteudo {
+
+        .conteudo {
             margin-bottom: 40px;
         }
     }
-    
+
     @media screen and (max-width: 1024px) {
-        .dv-nossos-servicos-conteudo {
+        .conteudo {
             gap: 0;
         }
     }
-    
+
     @media screen and (max-width: 768px) {
         display: none;
     }
-    
+
     /* Keyframes para animações */
     @keyframes fadeIn {
         from {
@@ -215,4 +220,4 @@ const NossosServicosStyle = styled.header`
     }
 `;
 
-export { NossosServicosStyle };
+export {NossosServicosStyle};

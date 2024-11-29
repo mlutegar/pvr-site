@@ -5,6 +5,25 @@ const TransacoesMobileStyle = styled.header`
     display: none;
     background: #44617c;
     flex-direction: column;
+    position: relative;
+
+    .dv-paginacao {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .botoes {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        top: 50%;
+        justify-content: space-between;
+
+        img {
+            width: 50%;
+        }
+    }
 
     .header {
         display: flex;
@@ -38,25 +57,18 @@ const TransacoesMobileStyle = styled.header`
     .conteudo {
         display: flex;
         justify-content: space-between;
-        padding: 50px 0;
-        height: 450px;
+        padding: 50px 35px;
     }
-
 
     .botao {
         background: none;
         border: none;
         cursor: pointer;
-
-        width: 44px;
-        height: 44px;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 0;
         transition: transform 0.2s ease;
-        position: relative;
-        top: 203px;
     }
 
     .seta:hover {
@@ -69,7 +81,7 @@ const TransacoesMobileStyle = styled.header`
 
     .cards {
         display: flex;
-        gap: 30px;
+        gap: 10px;
         transition: transform 0.5s;
         align-items: center;
         justify-content: center;
@@ -84,12 +96,6 @@ const TransacoesMobileStyle = styled.header`
 
     @media screen and (max-width: 769px) {
         display: flex;
-
-        .conteudo {
-            flex-direction: column;
-            gap: 20px;
-            height: 100%;
-        }
     }
 `
 

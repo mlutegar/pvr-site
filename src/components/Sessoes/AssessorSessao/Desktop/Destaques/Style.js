@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const DestaquesStyle = styled.header`
-    padding: 88px 150px 0;
+    padding: 88px 100px 0;
     background: #44617C;
 
     .titulo {

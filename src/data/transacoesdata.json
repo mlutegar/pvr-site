@@ -2,55 +2,61 @@
   {
     "titulo": "TLSV & Grupo GPS 1",
     "descricao": "Venda de 70% das Ações da TLSV, empresa líder na prestação de serviços para Telecom na região Sul do Brasil para o grupo GPS, empresa listada líder em outsourcing e terceirização.",
-    "imagem1": "imagens/empre1.png",
-    "imagem2": "imagens/empre2.png"
+    "imagem1": "imagens/tlsv.png",
+    "imagem2": "imagens/gps.png"
   },
   {
-    "titulo": "TLSV & Grupo GPS 2",
-    "descricao": "Venda de 70% das Ações da TLSV, empresa líder na prestação de serviços para Telecom na região Sul do Brasil para o grupo GPS, empresa listada líder em outsourcing e terceirização.",
-    "imagem1": "imagens/empre1.png",
-    "imagem2": "imagens/empre2.png"
+    "titulo": "ImovelWeb & Tiger Global",
+    "descricao": "Venda de 100% das Ações da ImovelWeb para o fundo de Private Equity Tiger Global Management.",
+    "imagem1": "imagens/imovelweb.jpg",
+    "imagem2": "imagens/tiger.jpg"
   },
   {
-    "titulo": "TLSV & Grupo GPS 3",
-    "descricao": "Venda de 70% das Ações da TLSV, empresa líder na prestação de serviços para Telecom na região Sul do Brasil para o grupo GPS, empresa listada líder em outsourcing e terceirização.",
-    "imagem1": "imagens/empre1.png",
-    "imagem2": "imagens/empre2.png"
+    "titulo": "Guararapes & BRZ Investimentos",
+    "descricao": "Aporte de Capital pelo fundo BRZ adquirindo 30% do capital da na Guararapes Painéis para financiar o crescimento da Cia",
+    "imagem1": "imagens/guararapes.jpg",
+    "imagem2": "imagens/brz.jpg"
   },
   {
-    "titulo": "TLSV & Grupo GPS 4",
-    "descricao": "Venda de 70% das Ações da TLSV, empresa líder na prestação de serviços para Telecom na região Sul do Brasil para o grupo GPS, empresa listada líder em outsourcing e terceirização.",
-    "imagem1": "imagens/empre1.png",
-    "imagem2": "imagens/empre2.png"
+    "titulo": "Águia Química & Allnex",
+    "descricao": "Cisão do negócio de Resinas da Águia Química e venda de 100% para o grupo Belga Allnex.",
+    "imagem1": "imagens/aguia.jpg",
+    "imagem2": "imagens/allnex.jpg"
   },
   {
-    "titulo": "TLSV & Grupo GPS 5",
-    "descricao": "Venda de 70% das Ações da TLSV, empresa líder na prestação de serviços para Telecom na região Sul do Brasil para o grupo GPS, empresa listada líder em outsourcing e terceirização.",
-    "imagem1": "imagens/empre1.png",
-    "imagem2": "imagens/empre2.png"
+    "titulo": "Nutrizon & In Vivo",
+    "descricao": "Venda de 100% das Ações da indústria de rações animais Nutrizon para o grupo francês Evialis In Vivo.",
+    "imagem1": "imagens/nutrizon.jpg",
+    "imagem2": "imagens/invivo.jpg"
   },
   {
-    "titulo": "TLSV & Grupo GPS 6",
-    "descricao": "Venda de 70% das Ações da TLSV, empresa líder na prestação de serviços para Telecom na região Sul do Brasil para o grupo GPS, empresa listada líder em outsourcing e terceirização.",
-    "imagem1": "imagens/empre1.png",
-    "imagem2": "imagens/empre2.png"
+    "titulo": "Quimicryl & Parex",
+    "descricao": "Venda de 100% das Ações da indústria química Quimicryl para o grupo francês Parex.",
+    "imagem1": "imagens/quimicryl.jpg",
+    "imagem2": "imagens/parex.jpg"
   },
-    {
-        "titulo": "TLSV & Grupo GPS 7",
-        "descricao": "Venda de 70% das Ações da TLSV, empresa líder na prestação de serviços para Telecom na região Sul do Brasil para o grupo GPS, empresa listada líder em outsourcing e terceirização.",
-        "imagem1": "imagens/empre1.png",
-        "imagem2": "imagens/empre2.png"
-    },
-    {
-        "titulo": "TLSV & Grupo GPS 8",
-        "descricao": "Venda de 70% das Ações da TLSV, empresa líder na prestação de serviços para Telecom na região Sul do Brasil para o grupo GPS, empresa listada líder em outsourcing e terceirização.",
-        "imagem1": "imagens/empre1.png",
-        "imagem2": "imagens/empre2.png"
-    },
-    {
-        "titulo": "TLSV & Grupo GPS 9",
-        "descricao": "Venda de 70% das Ações da TLSV, empresa líder na prestação de serviços para Telecom na região Sul do Brasil para o grupo GPS, empresa listada líder em outsourcing e terceirização.",
-        "imagem1": "imagens/empre1.png",
-        "imagem2": "imagens/empre2.png"
-    }
+  {
+    "titulo": "Goaltech & GTM",
+    "descricao": "Venda de 100% das Ações da distribuidora de produtos químicos Goaltech para o grupo latino americano GTM que é uma empresa investida do Fundo americano de PE Advent International.",
+    "imagem1": "imagens/goaltech.jpg",
+    "imagem2": "imagens/gtm.jpg"
+  },
+  {
+    "titulo": "Melcon & Aché",
+    "descricao": "Venda de 50% das Ações da indústria farmacêutica Melcon para o grupo Aché,empresa destaque na produção e distribuição de medicamentos no Brasil.",
+    "imagem1": "imagens/melcon.png",
+    "imagem2": "imagens/ache.jpg"
+  },
+  {
+    "titulo": "WT & BR Properties",
+    "descricao": "Aporte de USD 142mm por 10% das ações da WT Empreendimentos para construção do complexo JK Iguatemi (prédios de escritório e shopping) com posterior fusão com a BR Properties.",
+    "imagem1": "imagens/wt.jpg",
+    "imagem2": "imagens/br.jpg"
+  },
+  {
+    "titulo": "Locamerica Locações & Unidas",
+    "descricao": "Aporte de USD 75 mm por 30% das ações da Locamerica Locações de Veículos para crescimento orgânico e inorgânico com posterior IPO na BOVESPA. Recentemente a Locamerica adquiriu a UNIDAS e está em processo de fusão com a LOCALIZA.",
+    "imagem1": "imagens/locamerica.png",
+    "imagem2": "imagens/unidas.png"
+  }
 ]

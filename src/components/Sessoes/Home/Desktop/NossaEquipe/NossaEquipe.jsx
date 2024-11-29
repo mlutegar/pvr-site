@@ -1,10 +1,30 @@
 import {NossaEquipeStyle} from "./Style";
-import {useContext, useState} from "react";
+import {useContext, useEffect, useState} from "react";
 import {LangContext} from "../../../../../context/LangContext";
 
 const NossaEquipe = () => {
     const [isTrue, setIsTrue] = useState(false);
     const { lang, setLang } = useContext(LangContext);
+    const [altura, setAltura] = useState(0);
+
+    // usseEffect para redimensionar o tamanho da div de acordo com o tamanho do conteudo
+    useEffect(() => {
+        const ajustarAlturaInformacao = () => {
+            const cards = document.querySelectorAll('.informacoes-equipe');
+            const alturas = Array.from(cards).map(card => card.offsetHeight);
+            const maxAltura = Math.max(...alturas.filter(altura => altura > 0)); // Filtra os valores válidos
+
+            console.log("ajustarAlturaInformacao -> maxAltura", maxAltura);
+
+            setAltura(maxAltura || 0);  // Garante que altura nunca seja Infinity ou NaN
+        };
+
+        ajustarAlturaInformacao();
+
+        window.addEventListener('resize', ajustarAlturaInformacao);
+
+        return () => window.removeEventListener('resize', ajustarAlturaInformacao);
+    }, [isTrue]);
 
     return (
         <NossaEquipeStyle>
@@ -18,7 +38,7 @@ const NossaEquipe = () => {
                             <img src="imagens/equipe01.png" onClick={() => setIsTrue(!isTrue)}/>
                         </div>
                         <div className="nome">
-                            Alexandre França <span>Fraga</span>
+                            Alexandre França <span>FRAGA</span>
                         </div>
                         <div className="botao">
                             <button className={`btn-ne-co-cd ${isTrue ? "ativo" : ""}`}
@@ -29,7 +49,7 @@ const NossaEquipe = () => {
                         {isTrue &&
 
                             <div className="informacoes-equipe">
-                                <ul className="ul-informacoes">
+                                <ul className="ul-informacoes" style={{height: altura}}>
                                     <li>
                                         {lang === "PT" ? "Engenheiro Eletrônico pela Escola Politécnica da Universidade de São Paulo, atua há mais de 35 anos no mercado financeiro." : "Electronic Engineer from the Polytechnic School of the University of São Paulo, has been working in the financial market for over 35 years."}
                                     </li>
@@ -72,7 +92,7 @@ const NossaEquipe = () => {
 
                         {isTrue &&
                             <div className="informacoes-equipe">
-                                <ul className="ul-informacoes">
+                                <ul className="ul-informacoes"  style={{height: altura}}>
                                     <li>
                                         {lang === "PT" ? "Economista pela FEA-USP, com especialização em mercado de capitais internacionais pela Oxford University." : "Economist by FEA-USP, with specialization in international capital markets by Oxford University."}
                                     </li>
@@ -105,7 +125,7 @@ const NossaEquipe = () => {
 
                     <div className="dv-ne-co-card">
                         <div className="foto">
-                            <img src="imagens/usuario.jpg" onClick={() => setIsTrue(!isTrue)}/>
+                            <img src="imagens/rodrigo.png" onClick={() => setIsTrue(!isTrue)}/>
                         </div>
                         <div className="nome">
                             <span>RODRIGO</span> da Silva Perez
@@ -120,7 +140,7 @@ const NossaEquipe = () => {
                         {isTrue &&
 
                             <div className="informacoes-equipe">
-                                <ul className="ul-informacoes">
+                                <ul className="ul-informacoes"  style={{height: altura}}>
                                     <li>
                                         {lang === "PT" ? "Economista pelo INSPER | Instituto de Ensino e Pesquisa, com especialização em Investiment Banking pela Saint Paul." : "Economist by INSPER | Instituto de Ensino e Pesquisa, with specialization in Investment Banking by Saint Paul."}
                                     </li>

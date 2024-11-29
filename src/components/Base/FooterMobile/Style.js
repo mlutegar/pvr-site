@@ -7,7 +7,7 @@ const FooterMobileStyle = styled.header`
 
     .dv-footer {
         background: white;
-        padding: 50px 150px;
+        padding: 50px 100px;
         animation: fadeIn 1s ease-in-out;
     }
 

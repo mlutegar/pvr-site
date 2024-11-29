@@ -5,12 +5,12 @@ const NossaHistoria = () => (
         <div className="imagem-nossa-historia">
             <img src="imagens/nossaHistoria.png"/>
         </div>
-        <div className="conteudo-nossa-historia">
-            <div className="titulo-nossa-historia">
+        <div className="historia">
+            <div className="titulo">
                 <div className="titulo-principal-nossa-historia">
                     A PVR Capital
                 </div>
-                <div className="subtitulo-nossa-historia">
+                <div className="subtitulo">
                     Nossa História
                 </div>
             </div>

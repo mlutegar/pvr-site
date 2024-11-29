@@ -19,10 +19,10 @@
   --destaque: hsla(8, 34%, 54%, 1);
   --detalhe:hsla(241, 96%, 72%, 1);
 
-  --titulo: 48px;
-  --subtitulo: 24px;
-  --corpo: 20px;
-  --botao: 24px;
+  --titulo: 22px;
+  --subtitulo: 18px;
+  --corpo: 14px;
+  --botao: 14px;
 }
 
 /* borda vermelha em todos os elementos para debug */
@@ -50,15 +50,6 @@ a {
 
 h1,h2,h3,h4,h5,h6{
   margin: 0;
-}
-
-@media screen and (max-width: 1440px) {
-  :root {
-    --titulo: 38.4px;
-    --subtitulo: 19.2px;
-    --corpo: 12px;
-    --botao: 19.2px;
-  }
 }
 
 @media screen and (max-width: 768px){

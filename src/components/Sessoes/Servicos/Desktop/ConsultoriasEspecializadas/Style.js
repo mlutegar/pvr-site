@@ -5,7 +5,7 @@ const ConsultoriasEspecializadasStyle = styled.header`
     height: 857px;
     flex-shrink: 0;
     margin-top: 50px;
-    padding: 50px 150px;
+    padding: 50px 100px;
     
     .titulo{
         margin-top: 100px;

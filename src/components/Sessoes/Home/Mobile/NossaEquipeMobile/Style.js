@@ -53,8 +53,7 @@ const NossaEquipeMobileStyle = styled.header`
     }
 
     .nome {
-        display: flex
-    ;
+        display: flex;
         color: #44617c;
         font-size: var(--corpo);
         font-family: Montserrat, sans-serif;
@@ -119,7 +118,6 @@ const NossaEquipeMobileStyle = styled.header`
     .redes {
         display: flex;
         gap: 20px;
-        border-top: 1px solid #44617c;
         align-items: flex-end;
         justify-content: center;
         flex-direction: row;
@@ -147,16 +145,21 @@ const NossaEquipeMobileStyle = styled.header`
 
     .ul-informacoes {
         animation: fadeIn 2s ease-in-out;
+    }
+    
+    ul{
+        padding: 0;
+        list-style-type: none;
+    }
 
-        & li {
-            color: #000;
-            font-size: var(--corpo);
-            font-style: normal;
-            font-weight: 400;
-            word-wrap: break-word;
-            animation: slideIn 1s ease-in-out;
-            padding: 20px 50px;
-        }
+    li {
+        color: #000;
+        font-size: var(--corpo);
+        font-style: normal;
+        font-weight: 400;
+        word-wrap: break-word;
+        animation: slideIn 1s ease-in-out;
+        padding: 20px 50px;
     }
 
     @media screen and (max-width: 768px) {

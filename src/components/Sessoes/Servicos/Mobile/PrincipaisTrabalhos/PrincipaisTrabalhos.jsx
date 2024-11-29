@@ -5,7 +5,7 @@ const PrincipaisTrabalhosMobile = () => (
         <div className="container">
 
             <div className="titulo">
-                Principais trabalhos realizados:
+                Principais trabalhos realizados
             </div>
 
             <div className="conteudo">

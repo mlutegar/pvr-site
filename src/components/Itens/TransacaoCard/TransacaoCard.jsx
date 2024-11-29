@@ -8,9 +8,12 @@ const TransacaoCard = ({transacao, numero, style}) => {
             <div key={numero} className="Card" style={style}>
                 <div className="Fundo-box">
                     <div className="Imagens">
-                        <img className="Imagemempresa2" src={transacao.imagem1} alt="Imagem Empresa 1"/>
-                        <div className="Br"></div>
-                        <img className="Imagemempresa1" src={transacao.imagem2} alt="Imagem Empresa 2"/>
+                        <div className={"imagem1"}>
+                            <img className="Imagemempresa2" src={transacao.imagem1} alt="Imagem Empresa 1"/>
+                        </div>
+                        <div className={"imagem2"}>
+                            <img className="Imagemempresa1" src={transacao.imagem2} alt="Imagem Empresa 2"/>
+                        </div>
                     </div>
                     <div className="Conteudo-texto">
                         <div className="Titulo-transacao">{transacao.titulo}</div>

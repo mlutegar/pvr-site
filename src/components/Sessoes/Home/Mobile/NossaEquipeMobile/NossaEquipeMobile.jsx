@@ -3,7 +3,19 @@ import {useContext, useState} from "react";
 import {LangContext} from "../../../../../context/LangContext";
 
 const NossaEquipeMobile = () => {
-    const [isTrue, setIsTrue] = useState(false);
+    // // isTrue: variável que controla se as informações da pessoa estão visíveis ou não
+    // const [isTrue, setIsTrue] = useState(false);
+
+    // isTrue1: variável que controla se as informações da pessoa 1 estão visíveis ou não
+    const [isTrue1, setIsTrue1] = useState(false);
+
+    // isTrue2: variável que controla se as informações da pessoa 2 estão visíveis ou não
+    const [isTrue2, setIsTrue2] = useState(false);
+
+    // isTrue3: variável que controla se as informações da pessoa 3 estão visíveis ou não
+    const [isTrue3, setIsTrue3] = useState(false);
+
+    // lang: variável que controla o idioma do site
     const { lang, setLang } = useContext(LangContext);
 
     return (
@@ -16,14 +28,14 @@ const NossaEquipeMobile = () => {
                     <div className="dv-ne-co-card">
                         <div className={"pessoa"}>
                             <div className="foto">
-                                <img src="imagens/equipe01.png" onClick={() => setIsTrue(!isTrue)}/>
+                                <img src="imagens/equipe01.png" onClick={() => setIsTrue1(!isTrue1)}/>
                             </div>
                             <div className="nome">
                                 Alexandre França <span>FRAGA</span>
                             </div>
                         </div>
 
-                        {isTrue &&
+                        {isTrue1 &&
 
                             <div className="informacoes-equipe">
                                 <ul className="ul-informacoes">
@@ -57,14 +69,14 @@ const NossaEquipeMobile = () => {
                     <div className="dv-ne-co-card">
                         <div className={"pessoa"}>
                         <div className="foto">
-                            <img src="imagens/equipe02.png" onClick={() => setIsTrue(!isTrue)}/>
+                            <img src="imagens/equipe02.png" onClick={() => setIsTrue2(!isTrue2)}/>
                         </div>
                         <div className="nome">
                             <span>PEDRO</span> Thomazoni
                         </div>
                         </div>
 
-                        {isTrue &&
+                        {isTrue2 &&
                             <div className="informacoes-equipe">
                                 <ul className="ul-informacoes">
                                     <li>
@@ -100,7 +112,7 @@ const NossaEquipeMobile = () => {
                     <div className="dv-ne-co-card">
                         <div className={"pessoa"}>
                         <div className="foto">
-                            <img src="imagens/usuario.jpg" onClick={() => setIsTrue(!isTrue)}/>
+                            <img src="imagens/rodrigo.png" onClick={() => setIsTrue3(!isTrue3)}/>
                         </div>
                         <div className="nome">
                             <p>
@@ -109,7 +121,7 @@ const NossaEquipeMobile = () => {
                         </div>
                         </div>
 
-                        {isTrue &&
+                        {isTrue3 &&
 
                             <div className="informacoes-equipe">
                                 <ul className="ul-informacoes">

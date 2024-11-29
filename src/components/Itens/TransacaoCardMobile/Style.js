@@ -6,6 +6,10 @@ const TransacaoCardMobileStyle = styled.header`
     align-items: center;
     text-align: center;
     
+    .imagem1, .imagem2 {
+        width: 100%;
+    }
+    
     .Card{
         width: 80%;
         height: 40%;
@@ -50,12 +54,6 @@ const TransacaoCardMobileStyle = styled.header`
     
     .Imagemempresa2{
         border-right: 2px solid #577FA4;
-    }
-
-    .Br {
-        width: 2px;
-        height: 60px;
-        background-color: #577FA4;
     }
 
     .Conteudo-texto {

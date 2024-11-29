@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const ContatoStyle = styled.header`
     background: #f5f5f5;
-    padding: 50px 150px;
+    padding: 50px 100px;
     animation: fadeIn 1s ease-in-out;
 
     .dv-co-titulo {

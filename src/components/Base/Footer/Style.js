@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 const FooterStyle = styled.header`
-    padding: 50px 150px;
+    padding: 50px 100px;
 
     .dv-footer {
         background: white;
-        padding: 50px 150px;
+        padding: 50px 100px;
         animation: fadeIn 1s ease-in-out;
     }
 

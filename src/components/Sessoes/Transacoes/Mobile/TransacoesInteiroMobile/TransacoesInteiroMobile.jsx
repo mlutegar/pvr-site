@@ -8,14 +8,19 @@ import Botao from "../../../../Itens/Botao/Botao";
 const TransacoesInteiroMobile = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const cardsPerPage = 3; // Defina quantos cards deseja por página
+    const [searchQuery, setSearchQuery] = useState("");
+
+    const filteredTransacoes = transacoesData.filter(transacao =>
+        transacao.titulo.toLowerCase().includes(searchQuery.toLowerCase())  // Filtra pela correspondência do título
+    );
 
     // Calcule o índice inicial e final dos cards para a página atual
     const startIndex = (currentPage - 1) * cardsPerPage;
     const endIndex = startIndex + cardsPerPage;
-    const currentCards = transacoesData.slice(startIndex, endIndex);
+    const currentCards = filteredTransacoes.slice(startIndex, endIndex);
 
     // Calcule o número total de páginas
-    const totalPages = Math.ceil(transacoesData.length / cardsPerPage);
+    const totalPages = Math.ceil(filteredTransacoes.length / cardsPerPage);
 
     // Função para mudar para a página anterior
     const handlePreviousPage = () => {
@@ -29,6 +34,13 @@ const TransacoesInteiroMobile = () => {
         if (currentPage < totalPages) {
             setCurrentPage((prevPage) => prevPage + 1);
         }
+    };
+
+    // Função para lidar com a mudança no campo de pesquisa
+    const handleSearchChange = (event) => {
+        console.log("handleSearchChange -> event.target.value", event.target.value);
+        setSearchQuery(event.target.value);  // Atualiza o estado com o novo valor de pesquisa
+        setCurrentPage(1);  // Resetar para a primeira página quando a pesquisa mudar
     };
 
 
@@ -46,14 +58,17 @@ const TransacoesInteiroMobile = () => {
                 <div className="pesquisa">
                     <div className="input-pesquisa-container">
                         <img className="icone-pesquisa" src="imagens/lupa1.png" alt="Ícone de pesquisa"/>
-                        <input className="input-pesquisa" id="input-pesquisa" type="text" placeholder="Buscar"/>
+                        <input className="input-pesquisa" id="input-pesquisa" type="text" placeholder="Buscar"
+                               value={searchQuery}  // Valor do campo de pesquisa
+                               onChange={handleSearchChange}
+                        />
                     </div>
                 </div>
             </div>
 
             <div className="transacoes">
                 <div className="linha1">
-                    {transacoesData.slice(startIndex, (endIndex)).map((transacao, index) => (
+                    {currentCards.map((transacao, index) => (
                         <TransacaoCardMobile key={index} transacao={transacao} isCardMenor={false} numero={index}/>
                     ))}
                 </div>

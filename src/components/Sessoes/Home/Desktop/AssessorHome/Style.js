@@ -2,12 +2,11 @@ import styled from "styled-components";
 
 const AssessorHomeStyle = styled.header`
     background: url("imagens/assesor.png") no-repeat center center/cover;
-    padding: 50px 150px;
+    padding: 50px 100px;
     opacity: 1;
 
     .Assessor-conteudo {
         display: flex;
-        padding-top: 150px;
         flex-direction: column;
         gap: 60px;
         width: 50%;
@@ -51,26 +50,19 @@ const AssessorHomeStyle = styled.header`
         animation: fadeIn 1s ease-out forwards;
         animation-delay: 0.6s;
     }
-
-    .dv-assessor-botao {
-        padding-bottom: 50px;
-    }
+    
 
     @media screen and (max-width: 1600px) {
         .assessor-conteudo {
             width: 60%;
         }
-        
-        .dv-assessor-botao {
-            padding-bottom: 40px;
-        }
     }
     
     @media screen and (max-width: 768px) {
-        padding: 50px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 20px 35px;
         
         .Assessor-titulo {
             display: none;

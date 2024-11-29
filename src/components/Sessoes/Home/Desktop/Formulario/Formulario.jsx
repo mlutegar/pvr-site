@@ -84,6 +84,7 @@ const Formulario = () => {
                                     texto="Enviar"
                                     modo={2}
                                     tipo="submit"
+                                    href=""
                                 />
                             </div>
                         </div>

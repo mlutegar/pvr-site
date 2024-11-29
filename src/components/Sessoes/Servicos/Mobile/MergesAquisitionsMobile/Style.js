@@ -24,7 +24,7 @@ const MergesAquisitionsMobileStyle = styled.header`
 
     .titulo {
         color: #44617C;
-        font-size: var(--titulo);
+        font-size: var(--subtitulo);
         font-style: normal;
         font-weight: 600;
         line-height: normal;

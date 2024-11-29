@@ -10,8 +10,8 @@ const HeaderStyle = styled.header`
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px;
-        margin: 0 150px 0;
+        padding: 10px 0;
+        margin: 0 100px 0;
         max-width: 1920px;
 
         .left {
@@ -28,6 +28,7 @@ const HeaderStyle = styled.header`
             & a {
                 text-decoration: none;
                 color: black;
+                font-family: Montserrat, serif;
             }
 
             & a:hover {

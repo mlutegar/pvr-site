@@ -8,12 +8,12 @@ const BannerStyle = styled.header`
     opacity: 0; /* Inicialmente invisível */
     transform: translateY(-20px); /* Começa deslocado para cima */
     animation: bannerFadeIn 1s ease-out forwards; /* Animação */
-    margin: 0 150px 0;
+    margin: 100px 100px 0;
     max-width: 1920px;
 
     .Titulo {
         font-size: 3.1em;
-        padding-bottom: 150px;
+        padding-bottom: 100px;
     }
 
     .Titulo-destaque,
@@ -26,6 +26,7 @@ const BannerStyle = styled.header`
         opacity: 0; /* Inicialmente invisível */
         animation: fadeIn 1s ease-out forwards; /* Animação */
     }
+
     .Titulo-subtitulo {
         font-weight: 100;
         animation-delay: 0.5s; /* Aparece depois do título principal */
@@ -36,100 +37,57 @@ const BannerStyle = styled.header`
         font-size: 16px;
         gap: 20px;
         align-items: flex-end;
-        opacity: 0; /* Inicialmente invisível */
-        animation: slideUp 1.2s ease-out forwards; /* Animação */
+        opacity: 0;
+        animation: slideUp 1.2s ease-out forwards;
         animation-delay: 0.7s;
+        bottom: 0;
+        position: absolute;
+        right: 0;
     }
 
     .Coluna1, .Coluna2, .Coluna3, .Coluna4 {
-        width: 8.813rem;
+        width: 80px;
         opacity: 0.60;
     }
 
     .Coluna1 {
-        height: 161px;
         background: #E8E8E8;
+        height: 84px;
     }
 
     .Coluna2 {
-        height: 269px;
         background: #577FA4;
+        height: 188px;
     }
 
     .Coluna3 {
-        height: 567px;
         background: #44617C;
+        height: 396px;
     }
 
     .Coluna4 {
-        height: 695px;
         background: #D0D0D0;
-    }
-    
-    @media screen and (max-width: 1600px) {
-        margin: 50px 100px 0;
-
-        .Coluna1, .Coluna2, .Coluna3, .Coluna4 {
-            width: 120px;
-        }
-
-        .Coluna1 {
-            height: 137px;
-        }
-
-        .Coluna2 {
-            height: 230px;
-        }
-
-        .Coluna3 {
-            height: 485px;
-        }
-
-        .Coluna4 {
-            height: 595px;
-        }
+        height: 485px;
     }
 
-
-    @media screen and (max-width: 1440px) {
-        .Coluna1, .Coluna2, .Coluna3, .Coluna4 {
-            width: 80px;
-        }
-
-        .Coluna1 {
-            height: 84px;
-        }
-
-        .Coluna2 {
-            height: 188px;
-        }
-
-        .Coluna3 {
-            height: 396px;
-        }
-
-        .Coluna4 {
-            height: 485px;
-        }
-    }
-    
     @media screen and (max-width: 768px) {
         height: 620px;
-        margin-bottom: 0;
         opacity: 0;
         flex-direction: column;
         padding: 0;
         position: relative;
+        margin: 0 35px;
 
         .Titulo {
-            font-size: 3.6em;
+            font-size: 3.3em;
             padding-bottom: 130px;
             padding-top: 50px;
         }
-        
+
         .Grafico {
             position: absolute;
             gap: 10px;
+            right: 0;
         }
 
         .Coluna1, .Coluna2, .Coluna3, .Coluna4 {
@@ -158,57 +116,6 @@ const BannerStyle = styled.header`
             background: #D0D0D0;
         }
     }
-    
-    //@media screen and (max-width: 768px) {
-    //    .Titulo {
-    //        font-size: 3.5em;
-    //        padding: 300px 0;
-    //    }
-    //    
-    //    .Grafico {
-    //        .Coluna1, .Coluna2, .Coluna3, .Coluna4 {
-    //            width: 120px;
-    //        }
-    //    }
-    //}
-    //
-    //@media screen and (max-width: 426px) {
-    //    .Titulo {
-    //        font-size: 1.5em;
-    //        padding: 300px 0;
-    //    }
-    //    
-    //    .Grafico {
-    //        .Coluna1, .Coluna2, .Coluna3, .Coluna4 {
-    //            width: 60px;
-    //        }
-    //    }
-    //}
-    //
-    //@media screen and (max-width: 376px) {
-    //    .Titulo {
-    //        font-size: 1em;
-    //    }
-    //
-    //    .Grafico {
-    //        .Coluna1, .Coluna2, .Coluna3, .Coluna4 {
-    //            width: 40px;
-    //        }
-    //    }
-    //}
-    //
-    //@media screen and (max-width: 321px) {
-    //    .Titulo {
-    //        font-size: 1em;
-    //    }
-    //
-    //    .Grafico {
-    //        .Coluna1, .Coluna2, .Coluna3, .Coluna4 {
-    //            width: 20px;
-    //        }
-    //    }
-    //}
-    
 
     /* Keyframes para as animações */
     @keyframes fadeIn {

@@ -29,16 +29,16 @@ const Header = () => {
                     </Link>
                 </div>
                 <div className="center">
-                    <Link to="/" className="navbarItem" id="Home">
+                    <Link to="/" className="navbarItem" id="Home" onClick={() => window.scrollTo(0, 0)} >
                         {lang === "PT" ? "Início" : "Home"}
                     </Link>
-                    <Link to="/servicos" className="navbarItem" id="navServicos">
+                    <Link to="/servicos" className="navbarItem" id="navServicos" onClick={() => window.scrollTo(0, 0)} >
                         {lang === "PT" ? "Serviços" : "Services"}
                     </Link>
-                    <Link to="/transacoes" className="navbarItem" id="navEquipe">
+                    <Link to="/transacoes" className="navbarItem" id="navEquipe" onClick={() => window.scrollTo(0, 0)} >
                         {lang === "PT" ? "Transações" : "Transactions"}
                     </Link>
-                    <Link to="/#contato" className="navbarItem" id="navContato">
+                    <Link to="/#contato" className="navbarItem" id="navContato" onClick={() => window.scrollTo(0, 0)} >
                         {lang === "PT" ? "Contato" : "Contact"}
                     </Link>
                 </div>

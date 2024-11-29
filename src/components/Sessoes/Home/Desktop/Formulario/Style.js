@@ -3,7 +3,7 @@ import styled from "styled-components"
 const FormularioStyle = styled.header`
     .div {
         background: #44617c;
-        padding: 50px 150px;
+        padding: 50px 100px;
     }
 
     .titulo {
